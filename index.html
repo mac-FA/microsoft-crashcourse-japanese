@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>はじめてのパソコン教室</title>
+<meta name="description" content="パソコンがはじめての方のための、Windows 11 と Excel 家計簿の入門教室（全10回）">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="パソコン教室">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#2f4f43">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAABXgElEQVR42u1dd3xVRdqeM3PqPbelF9KAACEkgdAlQAARARHLrnXtZe29rwWwrn1X0V27n66i67q70tWVDlITSCAQCBASQnpy++lnvj8m93ACqJQEFZkff2i43Jwz887b3+ehBp53Jji9Tq8jLXh6C06v08Jxep0WjtPrtHCcXqeF4/Q6LRyn12nhOL1OC8fpdYos+vQWkEVRlPXfGOPTG/KbFg6KoiBFAYrCGGPT1HSdSAcGgEGIgpCiKICxifFvVlZ+i8IBIQQAaJomq6phGDRCHMvGut0mxgAASFHtgYAiSbphIIR4lmUYBgBgmuZp4TiVF4IQYxAMhwEASXFxY/vl5Pfpk52R4XW505OTTBMDACCkahsafcFAVU1N+a5dWyp3NLa2AgBcDpGigPFbEhHqN1J4oyiKoqhgOAwhLBpUOH38+JEFAxNiYhDDYMMwTVPVdevDLE1DCCmEDE1rbm9fW7Zl7tKlqzeXmqbpEkX8mzE0vwnhQAjJiqLp+ujBg6+Zfn5RYSFCtCRLmq5jjIkrerhDSv6KoWmBFwxDX11a+uHc/64qKWFomuc4wzBOC8epIBn+YDAlIeGBa6+bVjwOYByKRDAAkKLsAvFDC2NsYkwB4HQ4AEXNX77sxQ/er29u9rhcp7x8oOScXqe2k+EPhYqHDnvzsceH5uUHQyFF0xCElmSQs8emSf6bLNM0MQBU1BiRD8uqqmlaQb+cyaOK9uzfX1m9V+C4U9u+nMrCgRBq9fsvP2faqw89zDJMKBJBCMGotjAMg6IolmFEh4PneRohlqZZhmFZVnA4eJYFGBuGYZomiW6IiERk2SWKF0yc2Nzevq68THQ4TmH5oE9lyfD5rph27pO33xGRJNM0aYQ6xMI0EYQet1tT1f1NTevLy2sb6nfuq9Z1AwBA06hvZlZ6csrw/Py0xESGZUPhMPknAAAaIVXTdMN48vY7AAD/mD8vzus9Ve3LqelzIIR8gcClU6Y+dcedEUmyvE6iMNxOZ1iSvlmzZv6KZWU7d/oCAcMmOgAA3TAQhF63u6Bv32ljx00aNUoUhEAohKKfIV/oEITHX3/ts0ULvW73KSkfp6BwIAhDkcjg3NwPn3lO13XTNC33AgDgcjpXl5b89R8fbygvZxhG4DgaIZIntce9AGPdMCRF0TRtWH7+XVdcWVQ4OBgKWXENxhhCSNP0NY8+UlJR4XQ4Tr0UyKnmc1AUpRuGQxDefPRxr8ulaRrxGMhdFzhu9pxPH3/9tYbWVq/LRVKf+AcWRVEcy4qCUNPQMHfpEtM0Rw0cZJgm+SuKokzTZGh6SO6AecuXWb/otHD8og1KMBx56Lrrxo88IxgOE0NgWYGZb77x5mdzvG43yzDkmI8mjuVYlmGYb79f4w8GJxUV6dHsCEVRiqalJifzDPPt92sFnj/FnNNTSjgghJIs5/Tq+fjNt6iqar/KAs/PfHP2x/PnJcbFmYZxTKeIMQYYu5zOtWVb2vy+iSPP0HWdGBcIoaqqub2zV2za2NjSwjLMqSQfp5QmpChK1fUrp00XHQ7LQzQMwyWKH8/96v/mzo33enVdP47TwwDouh7v9f7f3Lkfz/3KJYr27xcdjiunTVejEnNaOH6JkhGRpH5ZWZNHjw5FDYppmg6HY/ue3a98/FGs232CPqNhmrFu9ysff7R9z26Hw0HqtAihUDg8efTofllZEUk6leQD/nKOFkIIIUT2BSFJZh6lTVE0bcroMS6n07rWFEVhbL760UeyoiCETlDnY4xJmebVjz7C2LSHxy6nc8roMcpRu6XkfVHn94XH8r6nfhKM7BHGWNN1VdNM0zQMI3qAGEIIKcjQNMsw5Gh/pKnCNE2B44oGFZLUJ/mJ6HBs2rZtxaZNdkNwQsrDMFyiuGLTps3bdwwZMCAciZDjNAyjaFDh3//5+Y+3fVgfVlRV03UTm6ZpAkABACgAiHywDMPQNImGfl4P5mcTDqtgEZFllmHivN6M5BSPy9kvqydD06Zp0jRd19h4oLmpobW1obm5ze9naNrB8wjCw60DRVGyovTJzMzOzJBk2QpfEULzVyzTdI2ihC4UaE3X5q9YNryggBwecYSzMzN6p6fv2rePP1LNhTx2KBLRdN3jdGakpibHxaUmJPZIStJ1HUKo6Xpl9V5/MFTTUN/q86ma5uB5nmVJxPRbEQ6iLSKSpOl6Vo8e44cNH5aXn9cnO8bt4RgW0sj6HDAMwzAC4fCBpqb1W8tXby5dV1YWDIddoniIiFAUpel6dkaGyyFaqUyEUDAUKqnYzjJMF/ZxmabJMkxJxfagLWdKEq/ZGRkVu3cfEtOSR/UFgw5BGDt0aNGgwuF5+amJiW5RRAgBhED0w6ZuKJraHvBv3VW1YWv50g3rq+vqGJp2CMLPokVOtnAghBRVlWR5QHb2ledOnzBiZFxMDCZq1jA0LdxpCyiKAoBjmL5ZWQP69r1i2rk7qvfOWbBg4coV/lDI7XRafTcURRmmmZGcQkVPi9iU0u3b99bt57u0fIox5jlub93+yurqwv79iWUBAFAIZSSnGOZBX4TkQvyhkNPhuGTylMvOOScnqyfDspqqapoWliTSNmJ/XQrCWLfnrDPOmDR69M2XXLpk3dqP583dVlUl8DzHsic5SU+fZMnwBQJpScm333zZ5DFjXaIYiUT8fj9lrSN5cwbGuqJEJImCMCer57N333Pl9OnvfPHF3GVLBZ5nadqIRg2pCYnYdjYIwoaWZlXTOJbt2mtHUZSqaQ0tzQgOOOj5mmZqQqKlSxCEqq5Lsjx93PgbL7qof6/emqZJ0Rch6vOIX07cL4yxwLIXnT158ugxi1eumD1nzv7GhpNcxKFPmikBALT5/dPHjX/o+htSk5JCoZA/ECDOuv1SHlrjoCjSVwEQAgCQzc1Oz3j5wYfGDR/+7Dtvt/v9TlHEGCMI05KSrIuIMQYQVtXW6lH/tGtfRzeMqtpaAOHBB8Y4LSkJQUh8nVA4HOPxPHPnXeeOG6/ruj8QoCCE0RchuRNw2Ptai9wKfyCAELpoytSiwUOef+/ducuWel0ucLKGJ+iTIxkYY0lRHvvjTddecKGmaT6/n7aJhYmxaZoIIZqmSf8m6bVRdd3Qdc0wLAeWbK4kyxjj6eMn5GX3efDllzZX7oj1eDAAmq0P1Lq+3agID/tyTdcxADRCbX7/oH45L9x3f6/0dH8gQFGUvaJLHEwGIcQwLE2TlyV9rLphGIZhRbTkX/n8/jiP59WHHi7o2/eFD94XOI7qXCn8tQoHeY2wJD15+x2XnXtewNcOKIq2eQaAogSOYzhOikT8weD+xoZQJIIgMkwzPTkpxu2J9XgBABFZ0nQdQkhFZwt8fn9mSspbM2fdNGvGlspKlmEO1xB6dyrhw7+coigGofZAYFBOzlszZnmdTp/fT9O0pSpIrc7FCwCANr+vvaW5tqERQWiYhtPhSEtK9rhcLpdLUxRJUQDGMNpEomiaoqrXX3ypQxCemP26KAgnQT5OhuaQFOXJ2++4bNq5vvY22qZUTcMQHQ4AwNaqXSs2blxXXlZddyAQDimqCikKY+xxuTwu15D+ucPzC8YOHRofExMORwzT6Ngymg5FIi6H460Zs255atb3Wzbjw1xHr9PVTcVSCKHX6QKdjwcDEAiHzhg46G+Pz3A5HKFIxJIM0zQRRC6Xq6W9ffGqVevLyzZtr/AHg/5gkKIoUt5zi86sHqkj8gvGDh2al90HABCORCBCFABk/srX3nbZtHMBADPffMPB879uzYEQavP7H/vjTZede55dMkyMIUV53O6Sbdten/PJpoqKYDjEMixL0wghp8MBMAYUJatquKlpT23tl//7tkdS0kVnTbrm/AscghCWJKLSEUKSLLscjrdnzJp8042lO7YXjxxpxS/YNHunpyO7W9B1AQuCsHd6OrY1i1AMU7pje4+ExLdnzHLwvCTLyNZ7JgqCoqpvfPrJF99+U9fYaJomz3EIITH6sqZpBkLBjdu2rdlc+u6/vxySm3vHZX8YPGBAKBwm20VUiM/nu+zc8yKS9PTbb8V6PN3qn3ZjVZbEJueOG//wDTcGgwFkMyUMw0AIX/zgvSf//re9+/fzDCMKDoamreQVJt00FIUQEjieY5lAKLSiZNPyDev7ZmX1Tj+Y6SJZc6/b3TMtraqmZvTgoZqm2oPJxatWyorShfqDpDi9Ltc1518gCoLVTETTzP/WrL7m/Atye2cHw2HalgLxuN0bt22949mn5y5bpmqaKAg8x0MIoe1lyY6xDCPyAsC4qrZ23vJlvmBg1KBCBKGV9oUQypI0omBgdV1d2c5KhyB0n3HpLuEgwV5yXDxp7rWntHmOC0Uitzw566slSxw8L3Cc+aMjqSSEoRESeb6htfWrJUvivN6hBQWSJFnyIStK7/R0mkaxLhfR5BRF6bqeGBu7qrRkz/79XRjNQgjDkjQ4N/fq6efZZVSWJYHnigYVhiMRe3LM4/V+tnDBPc//udXv9zidEMIff1nirhKvc01paUlFxcQzzhAFQYtWfTHGgKKG5A74ds2aYCRsD/d+HcKBEAqGw4/eeOPIQYUHa6QYMwxDJGPDtq1xXi82zaPPDZsYcwxDUdQ3a1YnemOG5uVZZ0Niy8yUHhjgTqlMlpVlZen6dV2YB4MQRmT5+vMvzOvb1941AiHMSElVtYM/ITrjswULHp/9Gs+yPMsefVkYY0wBIIrirpqakoqKs0aN4jmOZNjIxUuIi3Py/KJVqxzd1mTUXc5aRJLysrOnjBkbCoXoaDsWMZx3PvvMpu0VsR7PcbRWGKYJIRQdjkdf/+vCFcs9tqQQRVGqpto/SVEUYvmiwYUxbo/eRc0W5GB6JCROHjMaMQzoPD2r2iwakYyFK5Y/+vpfRYcDHqkk9BPyAYCu67Eez6btFXc++wyJ54kc0AiFQqEpY8bmZWdHohr016E5IIRhWb7v6msK++dal9s0TbfL9eL77321dEmc16sflpM4pu9HEK7ZvHnC8OFxXq+lb0l0Z2IMMHaLIkTwy68Xv/Dee61+fxfmwSBF6YaxtarKK4rZ6Rk8xymqSqbirN9imqbA89V1dXc+9xw5y+O+3KQOsLO6WtW0M884Q47up2EYbpeLRujrNWu6abyq64WDoihVVdOTkh+67jrywKT67HA4Nm+veOqtvzt43jzhvgqWplv97YFgaPLoMZqmEaODMaZp2uVw0AitKi158u9/e+/fX/pDQZruYqtsYlxVUzN/xfLNlTti3Z7e6ekCzxumqRsGMQcAAI7jnn7r7yU7Klwn3JhuYsyz7JadlSPy89NSUjRNI8bFMIyM5OT/ff+93+bv/6KFAyEUCId/N/Gss0ePsTQexphlmMdnv7Z3/36B5/EJ10hNjB08v3V3VWG/nF4ZGdjELqfIc5w/GFxdWvrn99+dPWdObUODx+WiEeryO0UBwHMcyzC79u2bv2J52c5KgePjvd5Yr5djWE3XeZ5fU1r68kcfepzOLhlZQAhFJKmhtWX6uPFEUxKPO8bjrW2oX1de3h1hS9fnOYgcDMvLt2I8omO3Vu0qqahwCkKXheYUZZjGvOXLxo4sqq2v37Bya2lFxbqt5bX19dbcc/elAUgPgFsUMcYrNm5cvnFjekrKyPyC4mHDCvvlON1x85YvM0wTdJE5MwzDKQglFRVbq3YN6J1NjDVRycPy8j+aN7c7zEoXCwcR5ziPN69PtqqqVujFcNzyjRsD4XAX5m0MwxB5YVXJppueeKSssrKprQ0AwHOcSxQ7Dq/7qw9EKzhFEQDQ1NLy+eJFX3zzdUZKytDcAatKS0Se70LphAj5/P7lGzcOyh0QkSTLguf1yY7zeEOR8In3QXZvtEJGOTJSUmLcbs3Wvy9FwuvLy7q8c59ElUvWrQtJktfl9rpcpK/nJEM0kd/IMIzX5XaJYkNLy5f/+7bLgwiikteXl0mRsBXAa7oe43ZnpKQomtblxWfYHZfJ43JyDGtBoNA07Q8F99UdYGm6y7UfRVEuUaQRMkzD+FmbLjHGhmmQPjGP09nlR0Xc8H11B/yhIB3dSYwxx7Ael7M7hjG7XnMYhtEvqyeMqjjySvvrG/3hEN0NwkEu7i9qlAhj3B1H1XHNwqH99Y2sTTggQv2yehrd0LbSLckThqbtjhiEMBSJKKr6a5npoA5bv5wHU1Q1FG1MtH7K0N1SQO2WLz3c5COEfrGScfD8o/lHXdfNaLqCZCrJgAmIDuD/jB3h9r6hH9nwX65wHC7IBEjplyYTkKJIilrRNCIQxGWOcbs5hjWxSQEKA0w0XygSAQBouoYgYmiaY1nSNnCSUWzxkUTh16E5CGrF/sZGM2oCyfxqj+Qkr9OpqCrshu6K45MJRVVJKT/W48np1atPRmZ6cnLfrCwEYVpSspNMO1IAYIAQamprbfP5Q5HIrpp91QcO7K6tqamv9wWDFEU5eJ6hGQxwd4dIHa0CTmeP5CTVVjEwDWN/Y2N3bGzXSxykqAPNTfYcKKkeeZyuA81N7M8HYkEavjVNC8gSpGB6cvLIgQNHDx7SP6tnSmIiz3IAUtgwAABk9u6g24RxjNtNIwQANRVBbBghSaqpr99WtWvZhg0l2yua29oQgg5eQMdeXTumpRtGotNFapYHL6RpHmhugt1gtbtec7A03djSGgiHScqhI8vr9gzOzd39Te3PguBJxEJR1YgsJ8TETB49ZuIZZwzO6R8fGwswVlRV1TRFVcGRMEnJ0gzDQicl39Y3M3NAdvbvJ51dW1+/YWv5otWrNpSXdwxcIdQd7wghlBRlcG5ujNsTCAZJyosUKxpbWrsjTdD1wsEwTH1Ly4Gmpr5ZWbKiWOczIr/gy/99e/IVBkJI03VfMJiWlHTTRRefP35CekoKACAiy/5gEET72tGP3jwiMvafSIoSkSUKUEnx8b8/e/J5E860Bq58gYDb6SS57S6XjxH5BfYnYRmmuq6uvqWF6QZokG4pvPmCgT4ZGUPy8uVoCcAwjB6JiV+vWmWHXTsZjj2E7cGg2+m86aKLZ95y65mjRvEsG5YkoidgZ0BSEoNYvvNBACjidZKfRxtUKYqCVMerybKsm0ZKfMKkoqKxQ4YahrG1apeqaV1YSSeZ8pT4hAevu876iWmaDlFcuHzZ12tWi91QeOuWkr2h6xDBKUWjyUBRh2XxekORyIqSTeIJl+yPUkZVTQtL0vTxE/58971Ti8fRFBWJRMzOMtGRa6colqYFnhc4nncIPMOQds6OPzQtCAIvCDzD0AiZBJ802sBBrAzJZMuynBwfP6lodGFO/+q6uqraWo5lu8RVpBEKRCLXX/i7ccOH2xPzkKL+/s/Pa+vruwNUqLvQBE3T/PSFF/tl9exo9sGYjDpecv99VbU1Is93q+Nmh7SePm68qmkRWUY26AuC5gAhdPA8ohlD1xpaW2vq62vqDzS0tja1tu5vbKARjQGmAGWYRt/MLJcoZqX2SE1M6NkjLcbtpiBUVVVWFNx5uonoGLfTKSvKO1/+650v/6XruigIJzJBgyAMy3J2esbnL71MPFDSrS7wfGX13ssffKCbOsHobjqbYDj86YIFz959d0TqaPgxDMMhCE/ccss1j/6JAH12h/4gx9/u948fPuKp2+9ITUoigyG0feDMNDmW5QVBkeXNlTs2VVR8v2VzVU1NS3u7puuGYUAECfmG5XCs2LQJY5NGNMswqYmJOT17jh40eGBOTr+sLIqC4UiYkLOQqwwQCoTDCMI7r7p65MCBj7/+2u7a2uPGSieNZ5CinrjlFo5l7S0yDEN/umBBWJK6aYa2e3FIP3vxJfsYAWmr/HzRwsdef83pcHS5y9YxdykrV5933oPXXW8YhqQodvRZwzBYlhUE4UBDw/wVy5dv2LC5coekKAhCnmUJZApFUfiH3W2MMQltTIxj3O7h+fkTR5wxadQol9NpBzom2SqCy9Dq8z306ssrNm48jsYfYpJCkcjTd9x5yZSpZHQWRFtkdtfWXPrA/d2ogLu1+zwUiUwZM1aJjo0QkJMhBQWJ3phFq1YiCFmaNrvOZSNzl7Nuu/3WK64IhUL2ozJME1GUy+1uaWv74D//nvX3NxeuWN7Y1sZznIPnOYaBCFEQWqxeqq6bRnRFu5ao6Pwqz7ICz+u6Xlm995s1a1aWbEIQ9snMdIsiMTTkk2RmQuC43008q7m9bV15+TFhpdMIqboekqSn77jr0mnT/H6/ffZHEITn3nm7fNeu7oO47C7hICAWZTt39urRo6B//0i0VgQhlCRp6IABfTIyvt9c2uL3CTx/4i6bJRlP3X7HZeee6/P5YGcMfJco6ob+7r++eOKN17/5fg2h1WFomgKAApSJsawoYUmSZJng7MS63RzLChzP8xzLMMFwmHxA1TQi+kRYeJbjeb6xpeWbNauXb9woio78Pn0hoNQoOBiE0DAM3TAmFY1u9fnWlR0Vlj4pRbUHAzEu1/P33HvBmRMtnUGSil6vd/7SJa998g+309l9mdluNCtklkQUhE+ffzEzJTVkG78h9mV3bc3sTz5ZsHK5YWKR54/bq7JLxqXTzvX7fPaRdgCAy+Vatn7dyx9+sG13lYMXyPwIudwRRVZVjee4XmlpBf36pSclH8LqRd6itqG+zeffvb92b93+LZWV+xsbDcMggCokF0xBGJYkwzDGDRv+0HXXZ2dm2o/TQsl9YvbrP4mlb5pmWJYRpM4ZU3z7H/7QOz3D/lWGYTgd4r76A5c/9EBYkuiu7v46eT4HgigUCef36fvWzFkuh6PT+KhhCDxPI7SypGTe8mWrS0uOG6cRUlRYlmfeettlnSWDdGcxNP3mZ3Pe/OwzQAGnIFg2IhSJYIz7ZGZOGT2mqLAwOz3D7XIBijqc1YsCgGUYCCGAEJhmU1vbjr17l6xb+926tXWNjRzLElgmEtn6gsGEmNjHb775nHHjg8EgsGGlR+XjtTkLF8a43UeMXzDGAs+PHjz43OLxYwYP1g3j8E0LRiI3zZxRvmun0yEaZjemm7sdGJ9GyBcMEkgCl8MRkWX7ODXA2MELNO988MWnv/z2W8+xK0kaoRaf7/Gbbrn+4kvss9pkHwOh0EOvvrJk/Tqvy0X8X4RQOBLBAI8ZPOTis6eMKCjwuN2GpsmKopvmD2XQcTR3TponeI6DEB5oalq2ccPnCxeWV+1yRGGZaIQUVZVV9boLLnzg2utkRbE4G8h3OEXxrueenbd82eHDOwih9kDg2vPPf/y2+3Q5EJFlQCBJooUVB5GMWTM279jhdbn0bi5EdM9QUxRUFFKUibHT4ag+cGBTxbbJo8d43W5ZUewHYJiGz9/2+qefyIpyrFgrBCblkslT7r/mmmAwePgNu/nJWatLS+JjYkiVB2PsCwQG5+Y+c+ddt1x8aZ/MTMMwJEki7a4wms464up4KYoyTZNkOJwOx+DcAdOKi3umpm7dVdXY1kpGciCEHMuu2LjRFwgcgpVOAumiwYPXlm050NTEd57gJR9QNX3KqJEkfwhtU1IetzsYDt/85MzNO3bEejwkHWDBvOBfuHDAKM6VrCgRWY5IkqrrpmnKisIwzO7a2rlLlvRM69ErPd3qacMYO0VxTWnpnIULj3XyAkIYlqUB2X1eefBhi+fACvPIDSvdsYNAWhOwBoqibrvs8qduv6NXWnpYisiqauU3rTM4lNUrmhrB0fOzsqKmaZL6QOGAAWePGtXm85fv2kXagojDu7asrNXnO0Q+dF13O50FffsuXLFCMwy7p4UxZmi6qa2teOiwjNRUNdozjDHmOG75hvXXPfZYxZ49BN+BMH50bDLGDE0jCLtWSuiuEguKoohzx3Fcn8zM3hkZmckpKQkJaUnJuqGTO1G6Y8ea0lKGpkcWDCRdg2TLlm7YYAfhO0on1DRNBjEzb7lNFAQ7njXDMIFw+OYnZ5Xu2EGa4BFCgVCoV4+0p+68a/jAgaFgkCSp7D4ggWsSBQHRNKAoQ9dJGQUDACGEiAamoem6rCgmKcyScl0UlinW7XnloYdHFAx8/v13ZUUReF43jHiv9x/z51EAzLj1togsU1aQHwrl9cu5+8orn3hj9iGzGhBCWVVKt28fmpd3sIWYZdeWbVlTWnrp1KmFOTlk32hE729sqG9u3tdQv7umpqq2VlEUlmUcHN9VjWon6nOQbYrIsqbrfbOypoweUzSoMDsjwyU6KQSBiU3TJIeOAYAMA3TdFwxao9VkkOuS++9rbD22uiIB/7jriivvvPIqn89HYBc6CHIQuuaxR9eVl5G+B/LJ4fkFrz3ypzivl1T+LDEkQikKAjmzyn3Vu2tqahsadu6r1nWdoqBhGB6XKzsjIzM1NTs9o3d6OsdxmqpFFNmu9ol28Xi9JVvL73zu2eb2dqfDQVyQpra2Wy655JGbbjnEWXYIws1PzlqxaaMzCqMOov22w/LyPnjqGVlV7Q6H1+UCNG1qWgetOgYQQgApbJjBcKiqpmb15tJFq1burK4maL4n3qJ2QsKBINR0PSxLA3pnXzFt+uTRo91Op6HrkqJ0dIR31gZET1izN6ZpupzO/32/5tann3aJjqN3Rcm4Cqk1HGJQnKI46803Pp4/j0gGTTgAp57zxC23El8BdXaHXaKoG0bJ9u0Lli8r2b59b91+RVXtrF4UACbGhmkiBN2iMzsjo2hQ4ZTRY/pmZWm6HpFlOwWpbhguh6O5vf2OZ5/ZXLnD43TqhkHO+9m77v79WZP8UceI2L6qmn2X3H/f4TE8xuCT558/WJmKtoHZ+chAFI+Q2DiB4xBNB0KhxatW/WP+3G27q0ReYKI4nCfb50AIBSMRhyA8dO31j998S2H//rqmSbJsTXLCw7y7Q1DfCSTL8++9W3PgAHss4CqkCfuRG2/M69NH7pybn7ds6fPvvxfrdpNb2+LzXTJ5yrN336OoKtEiBz1WjuNYdlVJydNv/X32p59s3rEjEApxLCtwnIPneY4TOI4nf1jOwXMcw5qmub+xcc2WzfOWL9tXfyAtKTk9JcXQdd00YXR8S1FVj8t11qii1aWldU1NBBcEQrhmc+mZI0bGx8RY+6OqalpycouvfX3nSVeEkD8UwhhPKiqyYxJRh/nL0LalqqbJikJDWJibO33c+MTY2I0VFcFw+ESASY5TOIiuHpaX9+Zjj48feYaqqpIsU51B/y3nztYXcbA2Rm756pKS2Z/NsevVo1EbwXB4zJAh919zXcjGxcSybFNb6z0vvEAQ5RCEIUka0j/3pfsfIHj71i7rhuF1u/fu3//IX//y+qef1DTUO3he4HmGYQgABgGXlRSFBKWGYYAoyQHLMALHGaZZun373GVLm9rahuXluRwO2VYiUFTV43QOyun3zZo1sioTKrhgOFzb0DB9/Hjd1l1rYpyX3WfhypVhKWLPmHEsu6tm39ghQ5Pj4zWbW9rhGts31BZ7kwcgfvewgoEThg/fsXfP7tra456xPh7hIKycl08959WHHvE6XYQg3tp6IhOIosiO84LA8zzPCzzHsgwDoo3/AGOGpp96++/7DhzgjlFtmCZ+/Kab05NT7RvHc9ysN9/YuG2r0+Eg5bGEmNj3nnrKLYqqjekNAODxeBYsW3r3n/+8rWqX2+nswKjEOCLLwUgEAOBxOvv36tUnMystOblnWprI8xFJCoRCJE1HI0RRlMDzAOO1W7as3bJlYL9+GT16dIKhkuWMHj36ZmR8tXQpwfkXeH77nt1xXu/wggJrDFrX9bjY2HAksrJkkx2ghygPwzQnFRVJskyEgGNZB893bCbP8TxP+ktI9ceSEvIMEUmK98acf+bEVp/vuPlvj9nnQBC2+v2Er1WSZfuNJLkEh+XcVVc3tDRX1dYSvDOPy9U7PT09KTkzNRUAABlm+bq1f5w1k2CuHb3aCEUiQ3IHfPTsc3ZYGKcortq06foZj7tF0TBN4iP//YmZxcOGBaJmnkALcSz75uefvTHnU4ZhOJYlXR3BcJiiqPzsPsXDhhX07dc7PT3e62UZhsD4RWS5qa1tx949m3fsWLJ+XXVdHcswDp43DIOYea/LNfPW26aOGRsIhQ7qJ133er1//ej//vKPj+M8HsM0SRD7r1f/4nW5CdIQ6apsbmv93T13H5ER5tPnX+zfuzdRGvsOHKhtbNhdW0scF8M0s9PTk+MT+mVlEYoZQpJqPw6EkMDzHTl7j+dY/Q/6WHWGPxi0mHztj2IYhigIGICN27ZZzh3h5yXKElIQIRTv9fbL6jlhxIhJRWM+mjf3WPOhFACmiS8488xDJitN0/xw7n9JlE/wLa89//xxI0bYK5kAAI7jZv3tzQ//+5+E2FiimA3D8AeDY4cOve6CC4fmDnCIoqnrqqYRAHJAUaSbsEdiYq+0tKljx9108cVL169/799fbt+zJ8btNgzD5XBIinLHs88E7wrbq+oIoVAodONFF60qLSmrrBQdDpZlDzQ3f/H113deeRV5MIqiFEXpkZQ8ceQZn3+92Gvr+SDZ0n/Mn3fftTcsWLZk6fp1ldV7W3w+wzBM3EHRQiPEMkzPHmmD+/c/p3jc4P79KQDCktTRWQKhaZoRSSL8yJ8tWnisPSXHoDmIZBQPHfburCfDNibfjuKWKG7fs/vVjz5asWmjZugszfAc12mWEGMyQURimZSEBEmWddM8+uQGRVGapiXFxX/xyis8x5NMmmmaokNcuWnjzU/OJMZVUdXM1NRPn3+RYxgrfWIYhsfjef/Lf83825uJsbHEOQ2Gw3Fe771XXX3e+AkMTZPK2RFHIC00KYamHaLY1t7+wX//8+6X/6IRIvyjhmlqmvbhM88OyR1wCIlYeeWOqx97FEYzYF63+7MXX4r1eInyME3T6XBsqth29aN/OsS8krF6B8/XNjQghASOo2na3upM5FtWFFXXGESPHTL0nquu6t+rdzAcPqSmIwrCDTOeWL5xwzHJx9H6HCRASIyNe+Oxx1mG0aPWpIOvlec//Oq/97304u7aGlEQSEXtiGStJLUscFxElokmONb46Oyi0dOKx1kGnkAivfjBe7tqakjDZigceei664bk5VtNUwQ+a8X69Q//5VVyO2mE/MHgwL79/v7EjNFDh4XDYUXT7OlzYAOft4cGJgCSJHEMUzxiZH529vJNG8OSRNM0pCjDNFduKiHxvNU8qyhKVnpGbX39poptxOA2tLSkxMePGDTI6r7WdD0+JmbZhvVNra322TUSvoZl2SmKxDE6fD8BAKT7lUFoZ031f777jmfZoQPyrLjX6qgaOXDg16tX2wFSu0w4SN/KrNtuG5aXb+Fs2vhaZ//1Hx+LgsCznIl/IvlC/v44IOspitJ047ZLL+2dnkFSy8QPrarZ99onn5DmDEmWB/TOfuC66zRVs7XTMU1trbc/+4yiKoRGLhAKDcrJeWvmrOS4uEAggGzNH6Zpmtgk9GFWMYU0IVstPCbGUiSSk91nSP/+36xZIykyjRBD0y3t7dV1ddOKi+0z7xRFpSUlLVy50oI68gWD54wdC6mDFtntdtfW168tKzsksiBpoR+HEcDRuiDPcgCARatW+oKBSaM65ew1XU+Ii4v3ehevWnX07j88+uhx9ODB04rHBWz1LQAAx7IzZr/+8bx5ibGxhBHn6LuBjlUyFFXNSE4e3D+XRGvkIFmOW7FxY1vAjxCiIJRVdVrxOJfzoPIkkcIbc+bU1B8gli4UieT26v32jFnOw+DJTYydouhxuRGE7YGALxAIhMM8x3k8HhLBWtjZNE372tsLc/q/9cQMjmUJL7rX5fpu3dqvli6xSAhJc1P/3r3OGDSITNsKHLd9z95tu6oEnid3mvTrFw8dJnD84U7Y0W8UsaGJsbEfz5s3Y/brHMvalW4gGJxWPG704MEkuuxKhxRCeM308+2PSZJOr/3j4w+/+m9SfPyJQEcepXDIqprXt4+VAu9IKijy8k0bWZoGGGu6nhgbe5YNj5FkqSuqqhauXOFxuQzTNEzT6XA8c9ddHpfLcg5AFJ6cAtSKTRsXr1q1p7b2QHMTcfoyUlJyevY6b/yEAX37ypJkBcY0TbcHAoV5eQ9ff8Ojr/3VJYqmafIs+/G8uVNGj7GA6ghjzPRx475Zs5q0BSmasnzjhhEDB1miJitKn6zM9KSk/Y0N7AmALWOMdcOIj4n58Kv/JsTG3nnFlZ16jgC4Zvr5q0tLj/bQj1JtFBUWjiosDEeFjmS+15SWvPHZnITY2O6WDBAFus/J6knZkkU8x+2ura2o2i3wPKCosCQVDx2anpqqRLsCCODJx/PmBsJhwr0Yjkh3/eGKvH45nRjaTNPjdJZVVt4w4/Gbn5z5z68Xl+2sJJQGLT7furKyd7781x8efvCRV19u9ftFG+YdQ9N+n+/iyVPOLR4XCIWIkd1WVbVgxXIxykdJIHtHDhxojQByDLu6tDQUDlmwDoZheJ2urLQeSleA6eq6nhAb+8Znc9aUlriiLTIQwnA4PKqwsKiw8CiVx9Ea/unjxiNb9Ehe+C//+BicrEWOuW9mFrbBqDMMs3XnrkAkeswUNSKvwF4M4zlu34G679atcwoCxjgiSQOye//urEmhYNCyJh098YsXXfHIQ6tKSxy8EON2iw4Hx7Icy/Es6xLFWI8HAPDZokWX3n9f2a6d7s7Utaqm/fGii0SHg9gdGqH/LvlOsWW+dV33uNyDcnJkVSW2eF99/b76AyTR0pGDoem+mVldC9Dzl398bJ+Awhgjmp4+bnzXaI5o9Bh3xsCB9iqGUxS/WbNm/datrmPJfJ+I2jAMw+N0ZaX1OIQVvHJfNZFYXdPiPd7BA3KtUzFNk+P5pevXt/jaGYahANB0/cpzDyUz97hcX369+NHX/sowNOnXxRhLstzm97f6fW1+f0SWiWcX5/W2+NpvmjVz2+4qRzR3R7yKnJ69po0tJsk0hyCU7dy1tWqX9RniO48eNJjwe0CEQlJk7/79VmxCURQwzX5ZPbtqVtQ0TZfDsX7r1m/WrHHadJgsy2cMHJgUF6cdBcDcTwuHpCgD++XEeWOsryPlg/nLl3XhYMHRqMo4jyfG7bZMGBHcXTX7SD5bVtWstB4p8QlWjwxFUbqmbdhaTiIjRVUzU1LPHDHCPhck8PyuffueeedtgecRROQsg+Fwr7T0P1508b1XX/vHiy7ulZYeDIdJxkwUhPZAYNabb6q6Zi+JGaZ5/oQJVspVUuSN27ZZGU+iXfr17BnjchuGAQFlGEZldbWdIs4wjNSEBIHjuuqymRizND1/+TIlit5PdizOGzOwX44UtbzH75CS187v04dmGByJWCWu+qam8p07uwly+4iPoep6j+REj+gMSxIZZWAYptXvq6k7QMZEDdNMTUhgWdaKcmmGafX7tu6q4lmWAlREUYbn58d4vAFb3Zxl2ff+86UvEIj1eknsp6jqw9ffcOnUc0RBIBnSsCR9tnDBix+8T4JAj8u1sWLbguXLL548hbh7ZB4np2ev3ukZVTX7CAz+hm1bbzR+f7Car+tetyvW662tP8DQNI3Qjuq9hk2OVV1PTUr0Ol2+YKBLkPUwxgLHle/cWd/UlJKYqEa7q2iGye/TZ+HKFSeqOYilz07PsFt6jmXXlZe3d9E7HEu/GTxy/AYABSjdNDNTUu0ohhxN1zU0djwnwBRFDR0wwJ5edAjC9t1VX69eTXwIckIzbrn1+osvxabpDwT8fr8/EMCmef3Fl8645VY1mtPkWfbTBQuC4U6kwy5RHNivr6JpAAOOpmvrG/yhDhSNDrMoOpPj4yyzaB6p+a0Lp17J2bUHA+vKyy3nhqIobBjZ6RlHc3Y/LRw8w3rd7k66jqJqG+qNkwgES4ZHcnv1RtFusSiCZYMvGCRnTx/OK4vQgaYmSVEgBUkqOjUhsZM/y7Jrt5T5gkFy+/2h0PnjJ1w2/fz21hYTY0JrSk7X19Z62fTzL5hwpj8UoiiK57id+/btrK62chXkYNOSkjsoL2i63e9vtbH/kSA2NSHRxBhjQB6epGeIaVY1Lc7tyUrr0bWwi4Zp1jbU2yE9TNP0ut08w56QcERBedxpnUGoDE3bua+6W8dpjmwCO8OidSBYah3a8si8svtriUrQNC3W7UlPSVZtjphpmpX7qg9mRHj+ksmTsa6xLMvSNN25y0ZX5AsnnuXgeeJVqJq6a1+N3avAhtE3M4tlGBObCCFfOFTXcChgaFpSkuXGhiKSYZosw9AI0TRNyjRdC+NPQqed+6oPsV9pyUnEe/txKaSP5hccLgSaoYOTvg5/jENay36cV5YwxmF74kTX65ubCKaPrusxLrdLFJvb2ohvjxASeR4fzNzraclJsW5Pe8DPsZxhmvUtzYfA/XSqjBwRPsr2hBBSgVCIAhRpwDZNrGlaV5EG/fhh4aNrL6XBr2fhI+m2H/lf0BmV8QhwsxTFMAyOtjqHIpGr/vQIEbhwRBpVOOjVBx/+EQjzw8tDhwQaRzhmkpoDGCEUkiLXPvYoRVHRF8OAoiKy3IUBy4mq6qOx94e/JIN+BqmiOx8GBYBuGPZY+vBTJKgKVjApy0qMy30wI8QwQ/rn/u/77xGEpmligAOhEAaAYZiWtrZ+WT2tGI0oHklW7HHy4eVNe5bCxFg3DOqHXwFjTEDJfkQXdsk6/LCOEpYZ/rS7Gwjs72w7EcP0zczqDo74H5dR0nZ7MMlhGImxsW6H2OFV6Pqumn1UNHNA0kp9M7MQQiY2aZpu8fsqdu+2KhcQQkWWzy4anRQXF4pESA2WZVkHzyuK0iMp6ZyxY5Vo3o8E8Nt3727x+2iaJl5F38wsYOeVhXBXzT7SP2wYhtshJsbGarZdwhgTf9buRR2yunZLiSPfNzPrUEe+obE98NPB5k8nwWRN9QUCnS4lxunJKegkIooSf3NnzT7TZpJ1w4iL8ZJKJgUojHGrz4c7uyDJCfFOwUGCRsMwtuyspKKIQiRvlpma+tL9D7idzub29lAkEgyHm9raXKL44n33Z6SkytHAwcSYgnDLzkqrw8gpOJIT4u0+BKaoVp8PY0wByjRNgePjYry6Lctu6vrOmn12EuQj9md07UIQpiengM761RcIyJraBUkwXderamsmFhUdvHCqOiI/P8blJlnCk5QHAwB0HuQyTVPguBiPu9XfzlEAIVRVWwNsJC+yovTNzOyTmbFlxw6nKDoFYfHqVdeef4HH5SJ+H4IwHIkUDSr87IWXFq9etbFiGwBgaO6AyUWjM1NTQ5EIiqoNjmUbmpoWr17lFAQAgCTLA3Ny+mZmWk3nFEUBXa+qrUEIAQrohhHjcR/iPZBeMuok6lriZY/Iz7eSpBhjCqGq2pqj8Xzpo7my5bt26fZYSFVTEhPz+/ZdVVriPK625uPQHCzDVNcdaAv4XVE7ouu62+XqlZ5WsWe3iDHHMFU1Nc0+Hxk1I/ebZblRgwo3btsGAGBZtqa+fs7CBfdcd72vrY0ExiQeTk1MvOWyyw1dBwAgmlZk2c5MYBiGy+P5++ef1dTXkwqcZhijBhWyLCfJHV3BNE03+3xVNTUcwwCMVV3vlZ7mdrosNFmaptsC/upoPvfkCIekKENyB1jpUaukQGZ6uyAJJnDclsodrb52a1yRJEmnFY9TdR2eFLejI1nu89U1NHK2zaUgLOjTj6hjjmVr6usr9+61xngImPXU0WOIPJmm6XE6P/jqv+tKS4jysNSsqml+vz8ciYQjEb/fb3VsRAuqrnWlJR989V+CEGEYhsshTh09RrNNPPAcV7l3b019PceyJPwp6NOPspVDOYapa2hs9fmYkyUckKJUXZ9WPM5e+2UYptXXvqVyx9GUPuDRnEpja+v3W7bw0WwgQigUDk8aNWp4Xl7wEO6P7ntVCCOKtLu21uocoChKU9URBfmWLjEM47t1a6HNJ41IUp+srN+fdRYZGiA9Vw+89FJNQz2RD+uTJElKmggtH5NIRk1D/QMvvWQQmAYIA6HQ7886q09WloU2Q3pjv1u31noMl0McUZCv2VjuEE3vrq2NKNJJ265gJDI8L2/SqFH2hmee57/fsqWxtfVoZPRoH3TusqWGzUqRDqu7r7jyJCc6Nm2vsPeUKKqa1aNH7/R0WVEAxg6e/27d2vqmJntIIivKTRdfkp6cQjqAOI5r9fuufPjhDVvLvbGxNEK60cH/ZS3CEEsj5I2N3bC1/MqHH271+ziOIw3D6ckpN118ieVtWJXI79atdfA8wFhWlN7p6Vk9eig2MnOM8abtFeDkEkbcfcWVDttYELkbc5ctPVoJ+8lPEKiJ1aWla0pLRVG0sr/BUGhU4eDbLr2sOWq/u3WRctembdv8toKfYRhO0Tl1zBhV1wFFsSy7v7Hxi2++FmyNFKqqxsfEPHn77YqmkV4NjmVb/b4bZs545f33/KGQ1+PxOJ0sw5BgkjC0eT0efyj0yvvv3TBzRqvfR+qxpmkqmvbk7bfHx8RYVpwA+33xzdf7GxtZlgUUper61DFjnGJHQ1AH/VYwsGnbNj6q4bu7ztDc1nbbpZeNKhwcjM5ZmaYpiuKa0tLVpaWu6Dn+RKRzNN3npLm3PRg4b/wEtXNXxxkDB/mDwbVlW5wOB+7+d24PBIYOyOuVnq5GWZkxxklxcQtWrCCnRSO0p3b/OWPGduB0UVRH2NKzZ2Js7NdrVpO0GME5WbFp07ffr2lobg6GwgLHGYahqKovEFizefO/vvn6z++9++33awSOI/0iFibdOcXjrBZDYnbbfL6Zb7xhUUS4na6Hr7+BoPaQf+gQhA1by+csWsidQH/oUTqhZHz86unn3X/NtYe0gXEs++Rbfzv6+VP6KG+tSxRXlZTMX75s+vgJ9p5VRVVn3X4HoMD/ffVVrMdz9IQjVJQz65jsqKQoi1evKh4+wvIVFEXJSE09c8SIz79eHON2syx7oLnprS/++cStt1njbmQW4dJp5wIAHp/9OseyBFAw1uNp9fne+dcXCKE4j4eM8qqa1ur3E7zlWI/HNE0Eoayqiqp2oBUehgf64gfvH2hu8rrdAAB/KHTO2OKM1FT7GCai6cWrV0mKIhw70+zRbxTZ/Ka2tqvPO2/WbXcQ7lkr4PK43XOXLllVUnKUagMc6yB16fYdZ48qIpgW1sXVdX3iyDNi3O41WzZHZIljWIjQD+EPWdAMmmEcR6RDI9Tc3j5p5BlOUbT6IRCE6cnJ85cvI5vIsWzJ9or87D79eh7Et4AUJcny0AEDBvbrt66srLGtlWMYCCENIQGpVVQ1oiiSohBcNgfPIwgJxLgvFEqOi3/1oYemFY/zB4PINq3vcbmWr1//7Ltvk5CexHFP3X6H1+UmW9QxNdPS8urHH5nHnlMm3eQMGfX+4aiEbHhIikCIHrnhxruuuFKKtjZa0WVja+u9L7ygaurRZy+PQThYhmlpb9+7f/+FEyfqtoEqIh8jCwaOHzasobmlqrYmIksE3graF0V1jHBJkqQo8TExFvfAMZQJGKahpSU1IWHEwIMTY6qqpqWmRiLS8k0bO/IuGK8tK5syZrTX5VKjXiGkKElR+mZmnVNcrBtGxe7dgVBIN00CmN9RN6dpBCEGwDBNAmvGMszlU8954d77cnv1toNFkZbBprbW255+imDCkBndP/7+4ulnnhmK2h3TNJ1O5z8XL5q3fNnRX1l7dsfjdDa2tmq6TtDGDoLxRaswsqKEZck0zeKhw1554MFJo4rCUb5qK5ISeP6eF57fWrXrmNAujkE4SMdlZfXe5vb2Q0DQKIqSZDk5Pn7q2OKRAwfxLKuoWqvPJ8kyEQVJkRVVI9hFg/vnXnvBBX/6483bdldV1dQcK7oIBUCr33fu2OJOLZyGkdenz/KNG5rb2khXRHswUFJRcdaoIlEQDuIJU5SsqiLPTxg58swRI+O8XlXX2kiGQ5IisizJsqwouq6zLJvbu/dFk87+041/vGDiWTSEhHfBkgyCSXfb00/tqdvv4HlAURFJys7IeOqOOw8Wd0gSRVWfe++dYyWaISgM542f8Nc/Pd4jIcE0zWA47AsGJVmOyGRLFZKq6ZWWfvaoogevv+GG3/0uzuMlYweHgZ++vmDF8m4cpLYM288IwQCiQ/QPXHPtrZf/wef3k9IoGVUqqdh27eOPMTRNSvC+YLAwJ+etGbPcokjAfi0pNzF2cBzDsoqq7tq3r6GleWd1NamD0Aj1zcpKjk/ok5nJsaymqhFFOQTbSRSEQDhM0ArJ8C2p/H3w1NODcwdYeXfdMLwez5uffvLihx8cAgx3lOvnhWA4HkwwAt7yh3OmPXHLrRQAdtxZYCHzQchzHEIIdDwrBbCJTZNQDpD6oOhw/HHWjJWbNh2TvrXQGv/58iv2nngyR//Bl1/OeHN2Ymysbhgkuhmc0/+1P/0pJS7BHwp2Ah4ig90UxZN4xPYK2DB0w7ADBx6UKtP0OF31rc13PvtsyY7tpJ+KoMLNuvX2a3/3O8tdtdKRF993byB0bGzcBH/hkslTnrv7Hp/fT0FIAcCxLMswFISAgh0enWkahkHgdanOHQvEc8IAPPm3Nz9ZMP/HAbW7xiG19kh0ODZu27pha/mQAQNSk5JVVbVUiLWbqqbJqqrIsqIoiiIrikJYF4m1BABwHBfr9sxfsfxYyw0Mw7T4fG3+wNSxYzvhLSnKkAEDfMHA2rIyp8NBNqi2sWHRypU909Jyevc2TdOC5LLgIjVdVw4+p6IoiqJphOLETvJFWvqcTueyDeuJNSFtySR0vGr69DuvuDJsyxebpik6HDPffHNTRYV4jNM9HWHnbbcTtYSiVGiE7pRsJnlOC16XsrEAQAjdbvfeuv13Pffs16tXH5/SAseNCUZi9+oDB+YtX8YzTG7vbJfTqWkaeYiDKFU278mObmDlTnqlp5fvrNy1bx93LJ4HxtjBcWU7Kw+hZCBbM2lUUavPR+TDMAyeZYOR8LxlS9v8/rw+feJjY7Fparbhl8Of81Dit6hYtPp8r/zfh8+9+7asqg6eJ6CDLT6fZWStd7cTG3iPkWaFeBsXnDnx0qnn2Kd5D8LwHfacIMpHhiB0uVyarn+2cMEDr7xcXVd33CRA4ETQBDHGPMtqmvbt2u9XbNqIIOqdkeFxuUhCmjwr7tyzYGVXD34Dzzt4fsGKlRx7zOUohNDasrIJw0ckxMQQdA0rdJpUVNTm963ZvFkQBJLyYmh6fXnZolUrQ+Fwr7T0+NhYhmFIFc0COLA/p9VE7hAEgeeb29o++M+/Z7z5xqqSTU6HAyEEKAoD0NLeftX06RbOURSw23QKQnVd3d3P/xkfsVnwp4MUduattxLw/IPocgQJwv6cUbBlwn0sCIKsql8tWTLjjde/+PZrREGCDHD8KbVfKUgtiFIyFPTt995TT9MIEZ4Uy0XnOe6juXNf+ehDEnMahgkhpWpaSJLSkpLOHDFywoiROT17xsfEQIQABqbZ0dKHAYAQAQqYhtHS3m4RJOxvbHQKAsswpokRggRd6d6rrrlq+nQ7+r1pmjRN64Zx/eOPle2sPFZig1MHpNaeh7HDW2enp/8QvHUwFCoeNsyCtyaZu0f+8urnixfFHDtRGU3TrT7fxWdP/vM994YjkUORqFyu9WVbnnj99crqvR6XCyGETZOCUFFVwlORkZKSnZ6RnZER5/X2ycgglwxBuKumptXnq6qpqaqtqamvt1OrUBASGLF+WT2fvOOO4QUDD+fNEB2Oh1995Z9fLz6cF+EoXdFHrr/xxosuIploC956+YYNLqfz1wRvfbiIENYjwqSHEKKjrS6BcLhHQuIzd901evAQe9XK5XR+u2b1bc88faw5Iitn2ur3/+GcaUS3E4f3YJOOKPqDwfe/+s/Hc+cGw2HR4WBomjBj4CgXNfE97bVDAoZJ4Ng4liVAlICiNF0PRyIuUbxy+vTrzrvA43IFbT5BB92kIDwx+/VPFsyP83iOg/KCoihF1T569rnC/v0t95YUfleVbHr0r3+ta25yiyLp49INg2xyB8sHYWXoutpNV7Im4OiVZWma5zhBEHiWJWY7LEnD8vI+f+mV3N7Zkc4tIJqux3m9/1v7vT9qbo6tWouxKAjryspafb6zR482TVOPJuYhhLKqsixbPGz42CFDDEK45PeRZACEkKFpnoB7chyD6CiLLCPwvIPnCSUg4bWUFSUkRdyi89zicU/efsd5EyZijCVFsSN8MDR9lFxMP2JTZEXpl5V1/YUXWlGVFb33793795Mmbd6xva6x0et2E0jrjk22ENi6tIzXLXwr2OY00Qi1BwKDcnL+/sRMpyB0umoYA4wFjnd54rft2lG+a9fxYTGT0Hp9eXl9c9PowUNEnpdtKXNCfJEcHz9pVNGkUUWpiYm+YLDN7/eHgoqqGVGM5YPySgHDMHRdVzQtIkmSIrMM0zer57UXXPjI9Tf+7qxJXpc7FArZPWvdMJyCoGjajDde/2zRouOTjA6HQ5Kmjh0zaexZCBiarmNb6BeRZQfPnzWqaMPW8r11dSRc6q6+5C43Kz/kM3Y3jZfNvviG5uY9f+99vdIz/AH/4SkvnmU5ng+Fw9V1+9eVlZXt3Llnf217ICDJctAOWiSKAs/HuN290tIL+vYdUVCQ1SPNKYqKLHdQtBySFnN79tTWPPTKyxsrtsZ5vCdCoPRbofE6aQSAdvkIhMOxHs+fbvzjuePGK4oiq6rdVJGzRAhxLMuwLDBNfygoKUpru6+prY08nmEYibGxcTFegeM8TheAUFNVJZrls4uvbhg8y3IcN2/Z0mffebvN73eL4olTa/0mCABJu+WrDz507oQzLUoUEAXTWbhyxZN/e7Opvc3rcpOwpYt0FSSw9tPHT7jv6mt6JCeHQiE9mmS0eyqE9JtGiFC0HMR3A0A3DJKq0Q2DEK3DzmQPJP3ldDrrGhpe/r8P5y5dIvA8e2L8FYfELBhjXzCQGBP7xC23Th0z1m8DcSQZtnlLvrvnhee7lTq0G0mHA6HQ9HHj7/jDFYFAoJNkeL2fLVx4/8svAQBcURytLnN3MEYQ8hy3ZWflopUrFEUZ2C/H7faYptERVRJwv2hbCQbANE3NMFRVVTWN/NENA5smjhKTdYSpAGDTJEBkLqdLVdV3//XFE7Nf31RR4XE6CZtdF74FxlgUBElV5y5bmhQbN7SgwA68L0lSfr9+++rqynbu/FWSDrMM89zd9xASw4O1Mbf784ULHp/9mksUSWmxm367g+cjkrRs44bVpSWhcDgtMSkhPp6JcgyQng9g42w7wrLS51FUXVEQBIejqaXl88UL//zeO//57jviC3fT3SXhNMcwX69elRQTMyQvz+pdIjqyV1ra3GVLu8+sdItwELVxwZkTL5kyxd4XT8p19zz/Z55lu/aqHVmFIOQQhIbW1iXr1v1v7fc79+5lGCYxJsbrcnVUjKOZ8kN4YTpYQgGgEeI5ziEIPMtGJGnd1vK3Pv/81X98NH/5skA47HY6LfDo7nsLSFE0QkvWrxuWl5cZZQW0uHxq6utLtlccN6PKz+NzmKb56QsvHiSiwphM+Fxy/31VtTUiz580YCBiGhRVDUsSz3E9EpOGDBgwODe3d1p6elJSjMcDKQrR9ME6OKAANg1dNzFu9/trGxt3768tqajYtG1bXVOjrCiiIJAxoZMGlocgDEdpywAAxFsiyMyV1Xsvf/CBbpqF6fqRAghhKBwuHjbMTlFGUGBnf/pJxZ7dsT9AxtxNy8TYNAyapmM8HtM0DzQ37fm69ouvFzt4Ps7rzerRgwJUn8xMT7R2iiD0h0K79u3DAFfX1bX6fATDn+c4jmUJztPJfH6rklexZ/cH//3P7Zf/wY5S1y+r54iCguUbNjiPK798soWDgCMUDSpkWJY0QHe0vbS3f/nNN44TqxOeiH4mARHLMDzLEt3W4vMdaG4GGC/ftBFHSUwAwBQFaQgBRbEMwyDkdbmsTIlxcsXCLh8Ojvvym28umzKVtLB3dC+zbNGgwv+tXdsdcBhdLxwETXZYXr4WTVOSJtvFq1bVNjV6bNi/P8vCGBtRc8DQNBlHOHxn7UV84xeAs0N4h2ubGpdv3HjBWWcFospDU9Vhefkep6s7dhV2vdrQtJT4+NTERFXT7C+3rrzsF4JmdEhOjHR1HLI6+lFOLiLe0Xhy68rL7GAbqqalJiam2HgCf9HCoep6UnycWxQt1UfTdHvAX1JR8ctBu/o1LoJHUlJR0R7wk47UDgghUUyywZv+coWD2ObUhETK5j/TNE0KXXQXAXv/ZheNkD8UbPsBeNNfgVkxTTMtKcmOJMzSdF1Doy8UQicduvRUWh3zFqEfhDf9FWgOcCQ8UAghdfp4u+T6HQk0UesevptuEY7Dn57w0Z0+2i6MyX98w3/ZmqMzspvT4ehu9IHfiGRwLHvovCvGvw7NQexiZfVe09ZTr+p6WkqSR3R2B3Yz6B5g1xN0vLoDh5M0C3pEZ1pKJyh60zAqq/d2hz/X9e+AIPQHQ4qm2vsfPU5XZo/U7gi3MMbBcFg3DAQR+lmlhKIoBFEH/JwNT7dr0wSZPVI9TpduEw5FU/3BUHeIY9drDo5haurr2wMBJupRm6YpOMTh+QVqVydqCNXBhBEjnILgCwZ8wSAZqIcnEUCXqC6CXOgLBoLhcHJ8/O8mnuU4xgHxoxIOTRueXyA4xIPogDTdHgjU1Ndz3QBSSHe5cNA0TfiRJp5xhlVf1hSleOjQ9//9pdl1WV6EUDASPrto9IsPPbp3354N27aWVlSs21peW19PAeB0OEA319OJmsQYh8JhDEB6SsrI/ILiYcMK++UkJqU98PxT//7uf15XlyW2TcNwi2Lx0KGajfuSZdmtu6pa/T6xq2URdFPhTdW0DVvLJ9lAjyVZzsvuMzg3d1VJiburyisYI4jOLR6nq1JSbNzFZ0+++OzJLW1tpdu3f/71opUlJRhjlyji7qmtE+UUCIchhGOHDr3k7CmF/fvHx8ZiE4eliKaEzi0e99XSJaCLfjVpkRk9eHBedh87Rx2EcMPWclXTnA5H14t+tzT7QNjS7ptWPJZjOZKcIdRimSkp85YvI6byRIUaofZg4NzicTf8/veRSAQDLCuKoqo8x+X07HnO2OJBOTktvvbKvXsxAF2emcUAhCMR3TBGDx78xE233HrpZdmZmYQQQ9FUCgBN03pnZFTv37955w5REE5UOikKmyaE8Lm77ib8zlZdIhgOvfjBB6oN0/KXLhwMwzS0tvROTx+U098OztQzPd0XCKzZXOo8sdY6CKGq616X+/l77yMAZaQhtGNKRVU1Xe+TmXlOcXFaUvKBpiZfMNi1fiqCcOTAgY/98abbL708q0ePUCQiqyogs1LReW4EYU7PXotXrZZV5QR7xAkp2DXnnX/JlKl2QCmX0zl/+fJ/ffuNs3taFbtFOAh79P7GxnOLx9nBmTRNG1VYWFJRsaum5rhbLymKwgCEJen5e+4dUTDQDlKAo1grhBHB0I3BBYNGDcz/8ttv7QhEJ/hqhmm6HeK7Tz6Z26dvMBRUNA3ZZMJO75KSmNgjMWHusqXsjyK+/aRktPn9ZxQMfO6eewnO7kFAKU2b8cZsP2G5++XXVg4GEYKwtapq0coVTqdTj4J2EO362p8eHdI/l1SPqGO/sqZphiORZ+64a+rY4k5E7RizDHuIq2io8uqSUquM2SUeN8swdc1Ni1euMjQN4E58TayNVQ8h5A8Epo4tfuaOu8KRCAHPODZBjErGkP65r/3pUUCYPQj+h2E4nc5FK1dsrapydIMr2o3CYQWZs+fMOdDYyEcr9ZCiNE1zi+LfnpgxMr+gtb0dH4kM64euLI1QWJY1XX/qjjsvnTbNLhlRQtMtdrpvcsW++X71cWCe/kSiD8Lv1q+1s7iR6vm68i2cDaOYyMel06Y9dcedmq6HZZmOAqsfVRwEQGt7+8j8gr89McMtipqmwej0Oc9xBxobZ8+Z47DTU/4qzIrleTS1tTa3tZ0zttjOfqXpOs9x502YoOralsrKiCxzDEMjdLiXSlmZJYpSNC0YifTLynr1oYfPLhptR4rVDcPjdi/bsH7lpk0Ti0YrikykgWPZ2oaGd/71haXtu9DnCIbDE0aMJLARHfQ8LvfHc7/CAPfv3Tti4Z9CKEnS0Ly8YXl55Tt31jQ0QIpiaZpw5FKHXQAIIdF5hHHgmvPPf+7ue1mGUTvDqAs8//jrr23cttXZnXTx3SgcBBpqc+UOtyieMWSYNVxPzDbA+MyRZ4zML2hobalrbvYFA6aJqWhCiQKAgtAwTV3XQ5GIquvJCQk3XPi7Z+68Oz052T6NbRiGg+eD4fB1jz06ZEDeqMGD5ShltYPnt+7a9dniRXxXM2cTqMJxQ4f1SksjQCOmaQqio7Si4rV/fPz7SWc7eP4gviWEkqJkpqRecOZEB8dV1x9oaW+XFJmiKEBRCCHysqSiJqtqKBJmGHZkQcGf77rn4slTFEUxbLgSumF4YmLf//KLd778V8zxgn39/MIBonQtyzZuiPe4hxUMtAJ04lTKspyekjJ93PiiwsLUhESMsaSosqpIsqwbBondE2JjJ44845rzLnjg2uvGDR+uqZodg9caLL75yZkVe3bfdunlmUlJREsR+ogl69Yt37Sxy2nVyXnnZ/cpzM21EOtYhFRN+7+5/928Y8fh+KeqpkEKFg0ZMq14XN/MLK/LFZIihmGQ3L+iaRBCt9OV27v37886++4rr7rhwt8nxccHQyH7MKZuGF6vd878uc+887arG9rNuz0JdvgSOO6J2a8DAC4797yArx2QgAIAgvkEKGpA7+xBuQOkSMQfDO5vbAhFIggiwzTTk5Ni3J5YjxcAEJElfzBoT43ruu4SRV8odNOsGVsqK92i8zCzRPlCwe4aRzNNXyh4iCmkAHCLztLt22+aNeOtGbO8TmcwHLYooUyA/cGgg+cvnHjWhRPPavP72gP+2oZGBKFhGk6HIy0p2eNyCQ6HpigRWQYYHwJX4Y2JnTPvqydmvy4Kwkk4uG4Xjg4kJEGY+eYbEUm69oILNU2TFIUkpshJS4pCILY8LldCTAyEEANAAaDquqHr/lCQXD5kQ3HEGHs9nj21tQ++/NLmyh2xHo/vSLWubm1MPPzLMcaaYcS43Zt37Lhp5owX7ru/V3q6PxAgzgRFsOsNg7wRz7JpySm90tLJy5qmqeq6bhg+n68DjdOmMASOYxjmvX9+9sIH74uC0LUu9s+pOTpAlnn+6bffKtu586Hrb0hNSgqFQoZhEER3Au1OlIFm61nvsMq2cIbMLToEgabpuUuXPPvO2+1+v4eM43YmhO6wO92peA//coamqShgfvmunZc/9AABg9B1PSJJVDQdQjiwDYwNVVUUxf6+drpaDIBpGAghr8dzoLHx+ffenbtsKRmiOTmdMSeJO5i8TKzHM3/5ss07dtx+2WWTx4z1uN2RSMSOGntEMtwOnCDTpCAkF2j7nt3vfPHF3GVLBZ4nYKNkJnt/YyOwxZbANLPT07sDwYIgFmWnpwN75yZF7W9sNKI0pU6HIyxJ977w/LL162+86KL+vXoTlUle5CCg05FGZshiaNrldgfD4S8WLZw9Z87+xobYbvZAfx7hsPxHr9vd6vc9/JdXP54/78pzp08YMTIuJgYbhqKqGgE+sB8kRVEA0AgxLMuwrKaqO6r3zlmwYOHKFaFIxO102ieODMM40NxE2UgPDdNMjk/oDjZGkgpLjk+wfjshHT7Q3GQdHsHwcDudc5ctXbJ+3dQxYy8755ycrJ7kRTQC9ACAvTJHQGgZmuZYlkKotb19wcoVH8+bu62qSuB577GjLf6ahIMcIUPTnNu9a9++R/7yalaPHuOHDR+Wl5/XJzvG7eF4AdLI2ipgGIZhBMLhvXV167eWr95cuq6sLCJJLlH0dIYFJompmoZ6HN2+6ChpVs8eabtra7owmqUoSlaU3ukZ/bKy7JgI2DBqGuoP5xQmj/r54kXzli8bUVBQNKhweF5+amKiWxQRQgAhSz5M3VA0tS3g37qrasPW8qUb1lfX1TE07XW7yeTVST6sn4GSngT0Asc5eL6+ufndf3/50by5cV5vRnKKx+Xsl9WToWkC9VrX2HiguamhtbWhudkfChHsVa/LZZjmIfaeKOGqmprgYeBSg3P7b9+z2yEIXbW5pKgxOLe/y+m0srSkuaSqpoY5LE9PHpU89oqNG79bu9bjdCYnJCTHxaUmJPZISiLwupquV1bv9QdDNQ31rT6fqmkOnvcQ7fgzDZDS4GdaJDZjGYbc6WA4XLpju2ma365ZE91aUuSEZKI11uMh04tH9DEJs+vu2tqqfTUDc3IIgiex/dPGjvvn4q+7Nn3O0My0seOsVD2BHtmyY8fu2tofUlHksZ0OB3mqmgMHdtfUmJggVlMkDCbjryzDiIJAUp8/75guDX7WZV0LGiESa3Ry0DC2UCt/8vaQxNTqzaWDBwywmowikjSof87YIUOWbljfJU1GpOlm/LDhg/rn2JtuEEKrN5dKisJz3I/8FivpwrEsz3GHtLZYc0q/kKFRCH4Z68gzzccyzWyaJscwi1atDNo4kTDGFAXvueoqcmYnWGEhl57nuHuuuoqioL0AGwyFFq1ayTHMUZ6rpQV/ydPbvxTh6KpSTmV19eJVq5yiSK4vhDASifTv1fveK69qCwROsEUbQdgWCNx75VX9e/W2SkWGYThFcfGqVZXV1d0Ev3RaOLoowqTpj+fPDUcilvJACAXD4Sunn3f19OktPt9xNJGAaGtFi8939fTpV04/z175QwiFI5GP589lu6fj5mdc3Vt4O/nCwbFsbX1DYmysvc4HoiQ9bT7f6tIS0eE4pvQz8W2bWluvnn7erENIdwzD7XZ/tnDBF99843KKpxjAxCklHB0+NkIbKyomDBseHxNjpV+j/LcjWYZZs7lU1XWB48BPiQjprghJkq7rd1951QPXXCt1plYReH7v/v0PvPIygtQvaurutHD8oHCEwuEde/ecf+bEqE8alQ/DGDt0WGH//tUH6qpqakgSk4AY2/P3pO5lmmZElkORyODc3GfvvueisycfwtdKIs+7/vzsvro6gePMU24S+BQUDivn0erzHZH/NjsjY+qYsdkZmbKqtPh8/mAwIsu6rlsIxmFJUjVNdDiG5eXdcfkV9151de+09EAweDhf68w3Zn+9erXb5TJORcSi7mVN+DmlHqHWKDXfoSQ9pokgdIqipqr7m5rWl5fXNtTv3Fet6wYAgKZR38ys9OSU4fn5aYmJDMuGwmHD1h5sJ905bmqV08LxC5IPVVUPYVAgwwosw3AcByjKsGAjCGYtxhbXqZ1JmjAlsCx7ykvGqWlW7PZFFIRNFdvKdu48Y+DAhLg4wiNs8ThRURYmRZY1Xe/4o2myLCuqSmb17PoGYOxxu5taW+954fkFK5bHuN3GKY1/dyoLB4g2aldW7128elW815vXpy/HMIqqmhhTnUllD3dILfeClIFcDgfLsvOWLb3nhee3Vu3ynKJ+xm/FrNjtC+EkHD148DXTzy8qLESIlmRJi/qqoHNNx6pxUBTF0LTAC4ahry4t/XDuf1eVlBC2vVPYmvy2hANElQTh6ioaVDh9/PiRBQMTYmIQw2DDIP2b1odZmoYQUggZmtbc3r62bMvcpUtXby4lDF/dyap2Wjh+RhUCIcYgGAkDAJLi4gb2y8nv0yc7I8PrcqcnJxEGbQip2oZGXzBQVVNTvmvXlsodja2tAACXQ6QoYPyWQHZ/W8JBFvExNU2TVdUwDBohjmVj3G6SxYIU1R4IKKqqGwZCiGdZhmGArdr+21k0+O0tcsw0TbsZhmTQsWm2BQIWXTmDECOKhGvY/MV0V5wWjpMayBg218E+1kDEBfzmF316C+wRyunVyf6e3oLT67RwnF6nheP0Oi0cp9dp4Ti9TgvH6XVaOE6v08Jxep0i6/8B+YScW19JxOsAAAAASUVORK5CYII=">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#fbfbf8; --card:#ffffff; --ink:#1f2a2e; --sub:#566368; --rule:#cfdde8;
+  --board:#2f4f43; --board-edge:#8a6a45; --chalk:#f3f1e7; --chalk-dim:#c9d6cc;
+  --red:#d6332a; --blue:#1b5e91; --green:#1d7044; --mark:#fff3a6; --soft:#eef3f6;
+  --fig-wall:#dfeaf2; --fig-bar:#f4f6f8; --fig-line:#93a3ad; --fig-bezel:#3b4347;
+  --head:"Klee One","Hiragino Maru Gothic ProN","Yu Kyokasho","YuKyokasho",serif;
+  --body:"Zen Kaku Gothic New","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    color-scheme:dark;
+    --paper:#161b1d; --card:#1f2628; --ink:#ece9e0; --sub:#a6b1b4; --rule:#34434d;
+    --board:#24403a; --board-edge:#6b5236; --chalk:#f3f1e7; --chalk-dim:#b5c6ba;
+    --red:#ff7a6b; --blue:#86bdea; --green:#6fca97; --mark:#5b4f12; --soft:#263033;
+    --fig-wall:#2b3a44; --fig-bar:#3a4346; --fig-line:#7d8c94; --fig-bezel:#0c0f10;
+  }
+}
+*{box-sizing:border-box}
+html{font-size:112.5%; -webkit-text-size-adjust:100%; scroll-padding-top:env(safe-area-inset-top,0px)}
+html.fs1{font-size:131%} html.fs2{font-size:150%}
+:root{padding-top:env(safe-area-inset-top,0px)}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--body); line-height:1.85; line-break:strict; overflow-wrap:anywhere;
+  padding-bottom:calc(5.2rem + env(safe-area-inset-bottom,0px));
+}
+main{max-width:40rem; margin:0 auto; padding:0 1.1rem}
+h1,h2,h3{font-family:var(--head); font-weight:600; line-height:1.4; margin:0}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--blue); outline-offset:3px; border-radius:4px}
+.js main > section[hidden]{display:none}
+
+/* 黒板 */
+.board{
+  background:var(--board); color:var(--chalk);
+  border:6px solid var(--board-edge); border-radius:6px;
+  margin:1.1rem 0 1.4rem; padding:1.5rem 1.2rem 1.3rem;
+}
+.board h1{font-size:1.9rem; letter-spacing:.04em}
+.board p{margin:.5rem 0 0; color:var(--chalk-dim); font-family:var(--head)}
+.board .date{font-size:.85rem; color:var(--chalk-dim); font-family:var(--head); margin:0 0 .6rem}
+
+/* 文字の大きさ */
+.sizer{display:flex; align-items:center; gap:.5rem; margin:0 0 1.3rem; flex-wrap:wrap}
+.sizer span{color:var(--sub); font-size:.9rem}
+.sizer button{
+  font:inherit; color:var(--ink); background:var(--card); border:2px solid var(--rule);
+  border-radius:8px; padding:.3rem .85rem; min-height:2.7rem;
+}
+.sizer button[aria-pressed="true"]{border-color:var(--board); background:var(--board); color:var(--chalk)}
+
+.lead{margin:0 0 1.2rem}
+.progress{font-family:var(--head); font-size:1.1rem; margin:0 0 .6rem}
+.resume{
+  display:block; text-align:center; text-decoration:none; font-family:var(--head); font-weight:600;
+  background:var(--red); color:#fff; border-radius:10px; padding:.9rem 1rem; font-size:1.15rem; margin:0 0 1.6rem;
+}
+@media (prefers-color-scheme: dark){ .resume{color:#1a0d0b} }
+
+/* もくじ：ノートの罫線 */
+.toc{list-style:none; margin:0 0 1.6rem; padding:0; border-top:2px solid var(--rule)}
+.toc a{
+  display:flex; align-items:center; gap:.9rem; text-decoration:none; color:var(--ink);
+  padding:.8rem .2rem; border-bottom:2px solid var(--rule); min-height:4rem;
+}
+.toc .num{font-family:var(--head); font-size:.85rem; color:var(--sub); width:3.2rem; flex:none}
+.toc .tt{flex:1; font-family:var(--head); font-weight:600; font-size:1.15rem; line-height:1.4}
+.toc .tt small{display:block; font-family:var(--body); font-weight:400; font-size:.8rem; color:var(--sub)}
+.toc .hm{width:2.6rem; height:2.6rem; flex:none; border:2px dashed var(--rule); border-radius:50%}
+.toc .hm svg{display:none; width:100%; height:100%}
+.toc a.done .hm{border-color:transparent}
+.toc a.done .hm svg{display:block}
+
+details.family{background:var(--soft); border-radius:10px; padding:.9rem 1rem; margin:0 0 1.5rem}
+details.family summary{font-family:var(--head); font-weight:600; cursor:pointer}
+details.family ul{padding-left:1.2rem; margin:.7rem 0 0}
+details.family li{margin:.35rem 0}
+
+/* 各回 */
+.kai{font-family:var(--head); color:var(--sub); margin:1.3rem 0 .2rem; font-size:.95rem}
+.lesson > h2, .page > h2{font-size:1.75rem; margin:0 0 1rem}
+.meate{
+  background:var(--board); color:var(--chalk); border-radius:6px; border:4px solid var(--board-edge);
+  padding:.8rem 1rem; margin:0 0 1.3rem; font-family:var(--head);
+}
+.meate b{display:block; font-size:.85rem; color:var(--chalk-dim); font-weight:400}
+.iphone{border-left:5px solid var(--blue); background:var(--soft); padding:.7rem 1rem; margin:0 0 1.3rem; border-radius:0 8px 8px 0}
+.iphone b{font-family:var(--head); color:var(--blue); display:block}
+h3{font-size:1.25rem; margin:1.8rem 0 .7rem; padding-bottom:.2rem; border-bottom:2px solid var(--rule)}
+ol.steps{list-style:none; counter-reset:s; margin:0 0 1.2rem; padding:0}
+ol.steps > li{counter-increment:s; position:relative; padding:.15rem 0 .15rem 3rem; margin:0 0 1rem; min-height:2.3rem}
+ol.steps > li::before{
+  content:counter(s); position:absolute; left:0; top:.1rem; width:2.2rem; height:2.2rem; border-radius:50%;
+  border:2px solid var(--ink); font-family:var(--head); font-weight:600; display:grid; place-items:center; line-height:1;
+}
+.ui{font-weight:700; background:var(--mark); padding:.05em .3em; border-radius:3px; white-space:nowrap}
+kbd{
+  font-family:var(--body); font-size:.9em; font-weight:700; background:var(--card); border:2px solid var(--fig-line);
+  border-bottom-width:4px; border-radius:6px; padding:0 .4em; white-space:nowrap;
+}
+.tip{border:2px dashed var(--red); border-radius:10px; padding:.8rem 1rem; margin:1.3rem 0}
+.tip b{font-family:var(--head); color:var(--red); display:block}
+.ok{background:var(--soft); border-radius:10px; padding:.8rem 1rem; margin:1.3rem 0}
+.ok b{font-family:var(--head); color:var(--green); display:block}
+
+/* 図 */
+figure{margin:1.2rem 0; padding:0}
+figure svg{display:block; width:100%; height:auto}
+figcaption{font-size:.85rem; color:var(--sub); margin-top:.4rem}
+.co circle{fill:var(--red)} .co text{fill:#fff; font:700 11px var(--body); text-anchor:middle}
+.co line{stroke:var(--red); stroke-width:1.5}
+.ft{fill:var(--ink); font-family:var(--body)}
+ol.legend{margin:.6rem 0 0; padding:0; list-style:none; counter-reset:g}
+ol.legend li{counter-increment:g; padding-left:2.1rem; position:relative; margin:.4rem 0}
+ol.legend li::before{
+  content:counter(g); position:absolute; left:0; top:.2rem; width:1.5rem; height:1.5rem; border-radius:50%;
+  background:var(--red); color:#fff; font-size:.8rem; font-weight:700; display:grid; place-items:center; line-height:1;
+}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse; width:100%}
+table.pair th, table.pair td{border-bottom:2px solid var(--rule); padding:.55rem .4rem; text-align:left; vertical-align:top}
+table.pair th{font-family:var(--head); font-size:.9rem; color:var(--sub); font-weight:600}
+table.sheet{font-size:.9rem; min-width:19rem; background:var(--card)}
+table.sheet th, table.sheet td{border:1px solid var(--fig-line); padding:.3rem .45rem; white-space:nowrap}
+table.sheet th{background:var(--soft); color:var(--sub); font-weight:400; text-align:center}
+table.sheet td.n{text-align:right}
+table.sheet td.sel{outline:3px solid var(--green); outline-offset:-2px}
+table.sheet tr.hd td{font-weight:700}
+table.roma{font-size:.95rem}
+table.roma td{border:1px solid var(--rule); padding:.3rem .2rem; text-align:center; width:20%}
+table.roma small{display:block; color:var(--blue); font-weight:700}
+
+.kb{background:var(--fig-bezel); border-radius:8px; padding:6px; display:grid; gap:3px}
+.kb div{display:flex; gap:3px}
+.kb i{
+  flex:1 1 0; min-width:0; height:1.55rem; border-radius:3px; background:var(--fig-bar); color:var(--sub);
+  font:normal 9px/1 var(--body); display:grid; place-items:center; overflow:hidden;
+}
+.kb i.w{flex-grow:1.7} .kb i.x{flex-grow:2.4} .kb i.sp{flex-grow:5.5}
+.kb i.h{background:var(--red); color:#fff; font-weight:700; font-size:12px}
+
+/* できました */
+.fin{margin:2.2rem 0 1rem; text-align:center}
+.fin .donebtn{
+  font:600 1.2rem var(--head); color:var(--red); background:var(--card); border:3px solid var(--red);
+  border-radius:12px; padding:.8rem 1.6rem; min-height:3.4rem; width:100%;
+}
+.fin .stamp{display:none; margin:0 auto .4rem; width:8.5rem}
+.fin .stamp svg{width:100%; height:auto; display:block}
+.fin .stamp p{font-family:var(--head); font-weight:600; color:var(--red); margin:0; font-size:1.15rem}
+.fin.done .stamp{display:block}
+.fin.done .donebtn{border-width:2px; border-color:var(--rule); color:var(--sub); font-size:.95rem; min-height:2.7rem; width:auto; margin-top:.8rem}
+.fin.pop .stamp svg{animation:pon .45s cubic-bezier(.2,1.5,.4,1)}
+@keyframes pon{from{transform:scale(1.8) rotate(-14deg); opacity:0} to{transform:none; opacity:1}}
+@media (prefers-reduced-motion: reduce){ .fin.pop .stamp svg{animation:none} }
+.pn{display:flex; gap:.7rem; margin:1.4rem 0 0}
+.pn a{
+  flex:1; text-align:center; text-decoration:none; font-family:var(--head); font-weight:600;
+  border:2px solid var(--rule); border-radius:10px; padding:.75rem .5rem; color:var(--ink); background:var(--card);
+}
+.pn a.next{background:var(--board); border-color:var(--board); color:var(--chalk)}
+
+/* 困ったとき・ことば */
+.qa{border-bottom:2px solid var(--rule); padding:.9rem 0}
+.qa h3{border:0; margin:0 0 .3rem; padding:0; font-size:1.1rem}
+.qa p{margin:0}
+dl.words{margin:0}
+dl.words dt{font-family:var(--head); font-weight:600; font-size:1.1rem; margin-top:1rem}
+dl.words dd{margin:0; padding-bottom:.8rem; border-bottom:2px solid var(--rule)}
+
+/* 下のメニュー */
+nav.tabs{
+  position:fixed; left:0; right:0; bottom:0; z-index:5; background:var(--card); border-top:2px solid var(--rule);
+  display:flex; padding-bottom:env(safe-area-inset-bottom,0px);
+}
+nav.tabs a{
+  flex:1; text-align:center; text-decoration:none; color:var(--sub); font-family:var(--head); font-weight:600;
+  padding:.85rem .2rem; min-height:3.6rem; font-size:1rem; border-top:4px solid transparent; margin-top:-2px;
+}
+nav.tabs a[aria-current="page"]{color:var(--ink); border-top-color:var(--red)}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="hanamaru" viewBox="0 0 100 100">
+    <g fill="none" stroke="var(--red)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M50 50a3 3 0 0 1 6 0a6 6 0 0 1-12 0a9 9 0 0 1 18 0a12 12 0 0 1-24 0a15 15 0 0 1 30 0a18 18 0 0 1-36 0a21 21 0 0 1 42 0"/>
+      <path d="M75.9 39.3A12 12 0 1 1 75.9 60.7A12 12 0 1 1 60.7 75.9A12 12 0 1 1 39.3 75.9A12 12 0 1 1 24.1 60.7A12 12 0 1 1 24.1 39.3A12 12 0 1 1 39.3 24.1A12 12 0 1 1 60.7 24.1A12 12 0 1 1 75.9 39.3"/>
+    </g>
+  </symbol>
+</svg>
+
+<main>
+
+<!-- ================= もくじ ================= -->
+<section id="home">
+  <div class="board">
+    <p class="date">全10回　1回 10〜20分</p>
+    <h1>はじめての<br>パソコン教室</h1>
+    <p>Excel（エクセル）で家計簿をつけるまで</p>
+  </div>
+
+  <div class="sizer" role="group" aria-label="文字の大きさ">
+    <span>文字の大きさ</span>
+    <button type="button" data-fs="0">標準</button>
+    <button type="button" data-fs="1">大</button>
+    <button type="button" data-fs="2">特大</button>
+  </div>
+
+  <p class="lead">このページを iPhone で開いたまま、パソコンの横に置いてください。読みながら、パソコンで同じことをやってみる。それだけです。<br>
+  パソコンは、どこを押しても壊れません。自分のペースで、1日1回で十分です。</p>
+
+  <p class="progress" id="progress">全10回のうち、0回 おわりました</p>
+  <a class="resume" id="resume" href="#l1">第1回からはじめる</a>
+
+  <ol class="toc" id="toc">
+    <li><a href="#l1" data-n="1"><span class="num">第1回</span><span class="tt">電源を入れる<small>約10分</small></span><span class="hm"><svg><use href="#hanamaru"/></svg></span></a></li>
+    <li><a href="#l2" data-n="2"><span class="num">第2回</span><span class="tt">マウスに慣れる<small>約15分</small></span><span class="hm"><svg><use href="#hanamaru"/></svg></span></a></li>
+    <li><a href="#l3" data-n="3"><span class="num">第3回</span><span class="tt">画面の名前と、電源の切り方<small>約15分</small></span><span class="hm"><svg><use href="#hanamaru"/></svg></span></a></li>
+    <li><a href="#l4" data-n="4"><span class="num">第4回</span><span class="tt">アプリを開く・閉じる<small>約15分</small></span><span class="hm"><svg><use href="#hanamaru"/></svg></span></a></li>
+    <li><a href="#l5" data-n="5"><span class="num">第5回</span><span class="tt">文字を打つ<small>約20分</small></span><span class="hm"><svg><use href="#hanamaru"/></svg></span></a></li>
+    <li><a href="#l6" data-n="6"><span class="num">第6回</span><span class="tt">Excel をひらく<small>約15分</small></span><span class="hm"><svg><use href="#hanamaru"/></svg></span></a></li>
+    <li><a href="#l7" data-n="7"><span class="num">第7回</span><span class="tt">家計簿に書きこむ<small>約20分</small></span><span class="hm"><svg><use href="#hanamaru"/></svg></span></a></li>
+    <li><a href="#l8" data-n="8"><span class="num">第8回</span><span class="tt">合計を出す<small>約15分</small></span><span class="hm"><svg><use href="#hanamaru"/></svg></span></a></li>
+    <li><a href="#l9" data-n="9"><span class="num">第9回</span><span class="tt">見やすくととのえる<small>約15分</small></span><span class="hm"><svg><use href="#hanamaru"/></svg></span></a></li>
+    <li><a href="#l10" data-n="10"><span class="num">第10回</span><span class="tt">保存する・また開く<small>約15分</small></span><span class="hm"><svg><use href="#hanamaru"/></svg></span></a></li>
+  </ol>
+
+  <details class="family">
+    <summary>ご家族の方へ（はじめる前の準備）</summary>
+    <ul>
+      <li>Excel が入っていて、サインイン済みで開けることを確認する。</li>
+      <li>Excel をタスクバーに「ピン留め」しておく（スタートで Excel を右クリック →「タスク バーにピン留めする」）。</li>
+      <li>サインイン用の PIN（数字）を決めて、紙に書いて渡しておく。</li>
+      <li>タッチパッドよりマウスのほうが楽です。マウスをつないでおく。</li>
+      <li>「設定」→「アクセシビリティ」→「テキストのサイズ」で文字を大きく、「マウス ポインターとタッチ」でポインターを大きくしておく。</li>
+      <li>このページを iPhone の Safari で開き、共有ボタン →「ホーム画面に追加」でアイコンにしておく。</li>
+      <li>画面の文言は Windows や Excel の更新で少し変わることがあります。第1回と第2回だけは、横についてあげてください。</li>
+    </ul>
+  </details>
+</section>
+
+<!-- ================= 第1回 ================= -->
+<section id="l1" class="lesson" data-n="1">
+  <p class="kai">第1回／全10回</p>
+  <h2>電源を入れる</h2>
+  <div class="meate"><b>きょうのめあて</b>パソコンの電源を入れて、最初の画面までたどりつく。</div>
+  <div class="iphone"><b>iPhone でいうと</b>横のボタンを押して、パスコードを入れるのと同じです。</div>
+
+  <ol class="steps">
+    <li>電源ボタンをさがします。丸に縦棒が1本入ったマーク「⏻」が目じるしです。ノートパソコンでは、キーボードの右上あたりにあることが多いです。</li>
+    <li>電源ボタンを<strong>1回、短く</strong>押します。長く押しつづける必要はありません。</li>
+    <li>画面が明るくなるまで、1分ほど待ちます。</li>
+    <li>時計や写真が大きく出たら、キーボードの <kbd>Enter</kbd>（エンター）キーを1回押します。</li>
+    <li><span class="ui">PIN</span> と書かれた入力らんが出ます。決めてある数字（暗証番号）を、キーボードの数字キーで打ちます。</li>
+    <li>画面が切りかわって、下に細い帯のある画面になれば成功です。この画面を<strong>デスクトップ</strong>といいます。</li>
+  </ol>
+
+  <div class="tip"><b>つまずきやすいところ</b>画面が暗いままのときは、充電ケーブルがささっているか見てください。PIN がわからないときは、ご家族に聞きましょう。</div>
+  <div class="ok"><b>きょうはここまででも大丈夫</b>やめたいときは、ノートパソコンならふたを閉じるだけでかまいません。正しい電源の切り方は第3回でおぼえます。</div>
+</section>
+
+<!-- ================= 第2回 ================= -->
+<section id="l2" class="lesson" data-n="2">
+  <p class="kai">第2回／全10回</p>
+  <h2>マウスに慣れる</h2>
+  <div class="meate"><b>きょうのめあて</b>マウスで矢印を動かし、「クリック」と「ダブルクリック」ができる。</div>
+  <div class="iphone"><b>iPhone でいうと</b>iPhone は画面を指でさわります。パソコンは画面にさわらず、マウスで矢印を動かして、ボタンを押します。</div>
+
+  <figure>
+    <svg viewBox="0 0 340 190" role="img" aria-label="マウスの図">
+      <rect x="115" y="30" width="110" height="152" rx="55" fill="var(--fig-bar)" stroke="var(--fig-line)" stroke-width="2"/>
+      <line x1="115" y1="100" x2="225" y2="100" stroke="var(--fig-line)" stroke-width="2"/>
+      <line x1="170" y1="30" x2="170" y2="100" stroke="var(--fig-line)" stroke-width="2"/>
+      <rect x="162" y="48" width="16" height="34" rx="8" fill="var(--card)" stroke="var(--fig-line)" stroke-width="2"/>
+      <g class="co"><circle cx="138" cy="72" r="10"/><text x="138" y="76">1</text></g>
+      <g class="co"><circle cx="202" cy="72" r="10"/><text x="202" y="76">2</text></g>
+      <g class="co"><line x1="170" y1="22" x2="170" y2="48"/><circle cx="170" cy="14" r="10"/><text x="170" y="18">3</text></g>
+    </svg>
+    <ol class="legend">
+      <li><strong>左ボタン</strong>　いちばんよく使います。人さし指で押します。</li>
+      <li><strong>右ボタン</strong>　メニューを出すときに使います。中指で押します。</li>
+      <li><strong>ホイール</strong>　くるくる回すと、画面が上下に動きます。</li>
+    </ol>
+  </figure>
+
+  <h3>iPhone の動きと、くらべてみましょう</h3>
+  <table class="pair">
+    <tr><th>iPhone</th><th>パソコン</th></tr>
+    <tr><td>1回タップ</td><td><strong>クリック</strong><br>左ボタンを1回、カチッ</td></tr>
+    <tr><td>アプリを開く</td><td><strong>ダブルクリック</strong><br>左ボタンをすばやく2回、カチカチッ</td></tr>
+    <tr><td>長押し</td><td><strong>右クリック</strong><br>右ボタンを1回</td></tr>
+    <tr><td>指でなぞって送る</td><td><strong>スクロール</strong><br>ホイールを回す</td></tr>
+    <tr><td>押さえたまま動かす</td><td><strong>ドラッグ</strong><br>左ボタンを押したままマウスを動かす</td></tr>
+  </table>
+
+  <h3>やってみましょう</h3>
+  <ol class="steps">
+    <li>マウスを軽くにぎり、机の上ですべらせます。画面の白い矢印（<strong>ポインター</strong>）がいっしょに動きます。</li>
+    <li>机のはしまで来てしまったら、マウスを持ち上げて、まん中に置きなおします。持ち上げているあいだ、矢印は動きません。</li>
+    <li>画面の左上にある <span class="ui">ごみ箱</span> の絵に矢印を合わせ、左ボタンを1回押します。色がうすくつきます。これが「選んだ」という合図です。</li>
+    <li>何もないところで左ボタンを1回押します。色が消えます。</li>
+    <li>何もないところで<strong>右ボタン</strong>を1回押します。小さなメニューが出ます。何もないところを左クリックすると消えます。</li>
+    <li><span class="ui">ごみ箱</span> を<strong>ダブルクリック</strong>します。四角い画面（ウィンドウ）が開きます。</li>
+    <li>開いた画面の右上のすみにある <span class="ui">×</span> をクリックすると、閉じます。</li>
+  </ol>
+
+  <div class="tip"><b>つまずきやすいところ</b>ダブルクリックは、2回のあいだにマウスが動くと失敗します。マウスを机に押さえるようにして、指だけを動かしてみてください。</div>
+  <div class="ok"><b>迷ったら</b>「左ボタンを1回」。これが基本です。右ボタンは、使うときにこの教室で言います。</div>
+  <div class="ok"><b>マウスがないとき（タッチパッド）</b>キーボードの手前の四角い板を使います。1本指でなぞると矢印が動き、トンと1回たたくとクリック、2本指でたたくと右クリック、2本指で上下になぞるとスクロールです。</div>
+</section>
+
+<!-- ================= 第3回 ================= -->
+<section id="l3" class="lesson" data-n="3">
+  <p class="kai">第3回／全10回</p>
+  <h2>画面の名前と、電源の切り方</h2>
+  <div class="meate"><b>きょうのめあて</b>画面の場所の名前を知り、正しく電源を切ることができる。</div>
+
+  <figure>
+    <svg viewBox="0 0 340 210" role="img" aria-label="デスクトップ画面の図">
+      <rect x="2" y="2" width="336" height="204" rx="10" fill="var(--fig-bezel)"/>
+      <rect x="10" y="10" width="320" height="188" fill="var(--fig-wall)"/>
+      <rect x="24" y="22" width="22" height="24" rx="3" fill="var(--fig-bar)" stroke="var(--fig-line)"/>
+      <text class="ft" x="35" y="58" font-size="9" text-anchor="middle">ごみ箱</text>
+      <rect x="10" y="172" width="320" height="26" fill="var(--fig-bar)"/>
+      <text x="120" y="191" font-size="16" font-weight="700" fill="var(--blue)" text-anchor="middle" font-family="var(--body)">田</text>
+      <rect x="136" y="178" width="58" height="14" rx="7" fill="var(--card)" stroke="var(--fig-line)"/>
+      <text class="ft" x="165" y="188.5" font-size="8.5" text-anchor="middle">検索</text>
+      <rect x="202" y="179" width="12" height="12" rx="2" fill="#e2b33c"/>
+      <rect x="220" y="179" width="12" height="12" rx="2" fill="var(--green)"/>
+      <text class="ft" x="270" y="189.5" font-size="11" text-anchor="middle">あ</text>
+      <text class="ft" x="306" y="189" font-size="9" text-anchor="middle">10:30</text>
+      <g class="co"><circle cx="170" cy="90" r="10"/><text x="170" y="94">1</text></g>
+      <g class="co"><circle cx="40" cy="185" r="10"/><text x="40" y="189">2</text></g>
+      <g class="co"><line x1="120" y1="160" x2="120" y2="176"/><circle cx="120" cy="152" r="10"/><text x="120" y="156">3</text></g>
+      <g class="co"><line x1="165" y1="160" x2="165" y2="178"/><circle cx="165" cy="152" r="10"/><text x="165" y="156">4</text></g>
+      <g class="co"><line x1="270" y1="160" x2="270" y2="178"/><circle cx="270" cy="152" r="10"/><text x="270" y="156">5</text></g>
+      <g class="co"><line x1="306" y1="160" x2="306" y2="179"/><circle cx="306" cy="152" r="10"/><text x="306" y="156">6</text></g>
+    </svg>
+    <ol class="legend">
+      <li><strong>デスクトップ</strong>　机の上にあたる、いちばん広いところ。</li>
+      <li><strong>タスクバー</strong>　下の細い帯。いつもここにあります。</li>
+      <li><strong>スタート</strong>　「田」の字に似た青い窓のマーク。すべての入口です。</li>
+      <li><strong>検索</strong>　さがしものをするところ。</li>
+      <li><strong>あ／A</strong>　いま日本語が打てるか、英語かを表します（第5回で使います）。</li>
+      <li><strong>時計</strong>　時刻と日付。</li>
+    </ol>
+    <figcaption>図はかんたんにしてあります。実際の画面は、絵や色がちがいます。</figcaption>
+  </figure>
+
+  <div class="iphone"><b>iPhone でいうと</b>「スタート」は、ホーム画面にもどるのに近いものです。困ったら、まずスタートを押す、とおぼえてください。</div>
+
+  <h3>スタートを開いてみる</h3>
+  <ol class="steps">
+    <li>タスクバーの <span class="ui">スタート</span>（青い窓のマーク）をクリックします。</li>
+    <li>大きなメニューが開きます。これが<strong>スタートメニュー</strong>です。</li>
+    <li>もう一度 <span class="ui">スタート</span> をクリックすると閉じます。開く・閉じるを2、3回くり返してみましょう。</li>
+  </ol>
+
+  <h3>電源を切る</h3>
+  <ol class="steps">
+    <li><span class="ui">スタート</span> をクリックします。</li>
+    <li>スタートメニューの右下にある <span class="ui">電源</span> のマーク「⏻」をクリックします。</li>
+    <li>小さなメニューが出ます。<span class="ui">シャットダウン</span> をクリックします。</li>
+    <li>しばらくすると画面が消えます。これで終わりです。</li>
+  </ol>
+
+  <table class="pair">
+    <tr><th>メニューのことば</th><th>意味</th></tr>
+    <tr><td><span class="ui">シャットダウン</span></td><td>電源を完全に切る。1日の終わりに。</td></tr>
+    <tr><td><span class="ui">スリープ</span></td><td>ひと休み。すぐ続きができる。</td></tr>
+    <tr><td><span class="ui">再起動</span></td><td>切って、すぐ入れなおす。調子が悪いときに。</td></tr>
+  </table>
+
+  <div class="tip"><b>つまずきやすいところ</b>本体の電源ボタンを長く押して切るのは、やめましょう。かならず画面の「シャットダウン」から切ります。</div>
+</section>
+
+<!-- ================= 第4回 ================= -->
+<section id="l4" class="lesson" data-n="4">
+  <p class="kai">第4回／全10回</p>
+  <h2>アプリを開く・閉じる</h2>
+  <div class="meate"><b>きょうのめあて</b>「メモ帳」を開いて、大きさを変えて、閉じることができる。</div>
+  <div class="iphone"><b>iPhone でいうと</b>アプリは iPhone のアプリと同じ意味です。ちがうのは、パソコンではアプリが「ウィンドウ（窓）」という四角い枠の中に開くことです。</div>
+
+  <h3>メモ帳を開く</h3>
+  <ol class="steps">
+    <li><span class="ui">スタート</span> をクリックします。</li>
+    <li>スタートメニューの中の <span class="ui">すべて</span>（または <span class="ui">すべてのアプリ</span>）をクリックします。アプリの一覧が出ます。</li>
+    <li>マウスのホイールを手前に回して、一覧を下へ送ります。「め」のところまで進みます。</li>
+    <li><span class="ui">メモ帳</span> をクリックします。白い四角い画面が開きます。</li>
+  </ol>
+
+  <h3>ウィンドウの3つのボタン</h3>
+  <figure>
+    <svg viewBox="0 0 340 150" role="img" aria-label="ウィンドウの右上にある3つのボタンの図">
+      <rect x="8" y="8" width="324" height="134" rx="8" fill="var(--card)" stroke="var(--fig-line)" stroke-width="2"/>
+      <path d="M8 40V16a8 8 0 0 1 8-8h308a8 8 0 0 1 8 8v24z" fill="var(--fig-bar)" stroke="var(--fig-line)" stroke-width="2"/>
+      <text class="ft" x="20" y="29" font-size="11">タイトルなし - メモ帳</text>
+      <text class="ft" x="248" y="30" font-size="15" text-anchor="middle">―</text>
+      <text class="ft" x="280" y="30" font-size="15" text-anchor="middle">□</text>
+      <text class="ft" x="312" y="30" font-size="15" text-anchor="middle">×</text>
+      <line x1="22" y1="56" x2="22" y2="72" stroke="var(--ink)" stroke-width="1.5"/>
+      <g class="co"><line x1="248" y1="40" x2="248" y2="60"/><circle cx="248" cy="68" r="10"/><text x="248" y="72">1</text></g>
+      <g class="co"><line x1="280" y1="40" x2="280" y2="60"/><circle cx="280" cy="68" r="10"/><text x="280" y="72">2</text></g>
+      <g class="co"><line x1="312" y1="40" x2="312" y2="60"/><circle cx="312" cy="68" r="10"/><text x="312" y="72">3</text></g>
+    </svg>
+    <ol class="legend">
+      <li><strong>最小化</strong>　いったん下にしまう。消えたのではなく、かくれているだけです。</li>
+      <li><strong>最大化</strong>　画面いっぱいに広げる。もう一度押すと元の大きさにもどります。</li>
+      <li><strong>閉じる</strong>　アプリを終わらせる。</li>
+    </ol>
+  </figure>
+
+  <h3>やってみましょう</h3>
+  <ol class="steps">
+    <li><span class="ui">―</span>（最小化）をクリックします。メモ帳が見えなくなります。</li>
+    <li>タスクバーにメモ帳の小さな絵が残っています。それをクリックすると、もどってきます。</li>
+    <li><span class="ui">□</span>（最大化）をクリックします。画面いっぱいになります。同じ場所をもう一度クリックして、元にもどします。</li>
+    <li>ウィンドウのいちばん上の帯に矢印を合わせ、左ボタンを押したままマウスを動かします（ドラッグ）。ウィンドウごと動きます。</li>
+    <li><span class="ui">×</span>（閉じる）をクリックして、メモ帳を終わります。</li>
+  </ol>
+
+  <div class="tip"><b>つまずきやすいところ</b>「画面が消えた！」と思ったら、たいていは最小化です。タスクバーを見て、アプリの絵をクリックしてください。</div>
+</section>
+
+<!-- ================= 第5回 ================= -->
+<section id="l5" class="lesson" data-n="5">
+  <p class="kai">第5回／全10回</p>
+  <h2>文字を打つ</h2>
+  <div class="meate"><b>きょうのめあて</b>キーボードで日本語と数字を打ち、まちがいを直すことができる。</div>
+  <div class="iphone"><b>iPhone でいうと</b>iPhone は「あ」を押してから指をはじきます。パソコンは、ローマ字で打ちます。「か」なら <kbd>K</kbd> <kbd>A</kbd> です。</div>
+
+  <figure>
+    <div class="kb" role="img" aria-label="キーボードの図">
+      <div><i class="h">1</i><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i><i>-</i><i>^</i><i>¥</i><i class="w h">2</i></div>
+      <div><i class="w">Tab</i><i>Q</i><i>W</i><i>E</i><i>R</i><i>T</i><i>Y</i><i>U</i><i>I</i><i>O</i><i>P</i><i>@</i><i>[</i><i class="w h">3</i></div>
+      <div><i class="w">Caps</i><i>A</i><i>S</i><i>D</i><i>F</i><i>G</i><i>H</i><i>J</i><i>K</i><i>L</i><i>;</i><i>:</i><i>]</i><i class="w h"></i></div>
+      <div><i class="x">Shift</i><i>Z</i><i>X</i><i>C</i><i>V</i><i>B</i><i>N</i><i>M</i><i>,</i><i>.</i><i>/</i><i class="x">Shift</i></div>
+      <div><i class="w">Ctrl</i><i></i><i>Alt</i><i class="w"></i><i class="sp h">4</i><i class="w"></i><i class="w"></i><i>Alt</i><i class="w">Ctrl</i></div>
+    </div>
+    <ol class="legend">
+      <li><kbd>半角/全角</kbd>　左上のすみ。日本語と英語を切りかえます。</li>
+      <li><kbd>Back space</kbd>（バックスペース）　右上。1文字ずつ消します。</li>
+      <li><kbd>Enter</kbd>（エンター）　右はしの大きなキー。「これで決まり」と「改行」。</li>
+      <li><kbd>スペース</kbd>　手前のいちばん長いキー。漢字に変えます。</li>
+    </ol>
+    <figcaption>キーのならび方は、パソコンによって少しちがいます。</figcaption>
+  </figure>
+
+  <h3>やってみましょう</h3>
+  <ol class="steps">
+    <li>第4回と同じように <span class="ui">メモ帳</span> を開きます。</li>
+    <li>白いところを1回クリックします。細い縦の線がチカチカします。ここに文字が入ります。</li>
+    <li>タスクバーの右のほうを見ます。<span class="ui">あ</span> なら日本語、<span class="ui">A</span> なら英語です。<span class="ui">A</span> のときは <kbd>半角/全角</kbd> キーを1回押して <span class="ui">あ</span> にします。</li>
+    <li><kbd>K</kbd> <kbd>A</kbd> <kbd>K</kbd> <kbd>E</kbd> <kbd>I</kbd> <kbd>B</kbd> <kbd>O</kbd> と打ちます。「かけいぼ」と出ます。</li>
+    <li><kbd>スペース</kbd> を1回押します。「家計簿」に変わります。ちがう漢字が出たら、もう一度 <kbd>スペース</kbd> を押すと次の候補になります。</li>
+    <li><kbd>Enter</kbd> を押します。これで文字が決まります。</li>
+    <li>もう一度 <kbd>Enter</kbd> を押すと、次の行にうつります。</li>
+    <li>わざと何か打って、<kbd>Back space</kbd> で消してみましょう。</li>
+    <li>数字は、いちばん上の段の <kbd>1</kbd>〜<kbd>0</kbd> で打ちます。「3280」と打って <kbd>Enter</kbd> を押します。</li>
+  </ol>
+
+  <h3>ローマ字のおさらい</h3>
+  <div class="scroll">
+  <table class="roma">
+    <tr><td>あ<small>A</small></td><td>い<small>I</small></td><td>う<small>U</small></td><td>え<small>E</small></td><td>お<small>O</small></td></tr>
+    <tr><td>か<small>KA</small></td><td>き<small>KI</small></td><td>く<small>KU</small></td><td>け<small>KE</small></td><td>こ<small>KO</small></td></tr>
+    <tr><td>さ<small>SA</small></td><td>し<small>SI</small></td><td>す<small>SU</small></td><td>せ<small>SE</small></td><td>そ<small>SO</small></td></tr>
+    <tr><td>た<small>TA</small></td><td>ち<small>TI</small></td><td>つ<small>TU</small></td><td>て<small>TE</small></td><td>と<small>TO</small></td></tr>
+    <tr><td>ん<small>NN</small></td><td>が<small>GA</small></td><td>しょ<small>SYO</small></td><td>きゃ<small>KYA</small></td><td>って<small>TTE</small></td></tr>
+  </table>
+  </div>
+  <p>「ん」は <kbd>N</kbd> を2回。小さい「っ」は、次の字のはじめを2回打ちます（きって → KITTE）。</p>
+
+  <h3>家計簿のことばで練習</h3>
+  <table class="pair">
+    <tr><th>打つキー</th><th>変換すると</th></tr>
+    <tr><td>SYOKUHI</td><td>食費</td></tr>
+    <tr><td>DENNKIDAI</td><td>電気代</td></tr>
+    <tr><td>KOUTUUHI</td><td>交通費</td></tr>
+    <tr><td>SU-PA-</td><td>スーパー（のばす音は <kbd>-</kbd>）</td></tr>
+  </table>
+
+  <ol class="steps" start="10" style="counter-reset:s 9">
+    <li>練習が終わったら <span class="ui">×</span> でメモ帳を閉じます。「保存しますか？」と聞かれたら <span class="ui">保存しない</span> をクリックします。</li>
+  </ol>
+
+  <div class="tip"><b>つまずきやすいところ</b>打っても「kakeibo」と英語のままのときは、<kbd>半角/全角</kbd> キーを1回押してください。これがいちばん多いつまずきです。</div>
+</section>
+
+<!-- ================= 第6回 ================= -->
+<section id="l6" class="lesson" data-n="6">
+  <p class="kai">第6回／全10回</p>
+  <h2>Excel をひらく</h2>
+  <div class="meate"><b>きょうのめあて</b>Excel を開き、「セル」の場所を名前で言える。</div>
+  <div class="ok"><b>Excel（エクセル）とは</b>方眼紙のノートです。ます目に文字や数字を書くと、計算をかわりにやってくれます。出納帳や成績表をつけるのに向いています。</div>
+
+  <h3>Excel を開く</h3>
+  <ol class="steps">
+    <li>タスクバーに、緑色の <span class="ui">Excel</span> の絵があれば、それをクリックします。</li>
+    <li>なければ <span class="ui">スタート</span> → <span class="ui">すべて</span> とクリックし、「E」のところにある <span class="ui">Excel</span> をクリックします。</li>
+    <li>はじめの画面が出たら <span class="ui">空白のブック</span> をクリックします。ます目がならんだ画面になります。</li>
+  </ol>
+
+  <figure>
+    <svg viewBox="0 0 340 200" role="img" aria-label="Excelの画面の図">
+      <rect x="4" y="4" width="332" height="192" rx="6" fill="var(--card)" stroke="var(--fig-line)" stroke-width="2"/>
+      <rect x="5" y="5" width="330" height="14" fill="var(--green)"/>
+      <text class="ft" x="12" y="31" font-size="9">ファイル</text>
+      <text class="ft" x="54" y="31" font-size="9" font-weight="700">ホーム</text>
+      <line x1="54" y1="34" x2="80" y2="34" stroke="var(--green)" stroke-width="2"/>
+      <text class="ft" x="92" y="31" font-size="9">挿入</text>
+      <text class="ft" x="122" y="31" font-size="9">数式</text>
+      <rect x="5" y="37" width="330" height="27" fill="var(--fig-bar)"/>
+      <g fill="var(--fig-line)"><rect x="14" y="44" width="12" height="12" rx="2"/><rect x="32" y="44" width="12" height="12" rx="2"/><rect x="50" y="44" width="12" height="12" rx="2"/><rect x="78" y="44" width="30" height="12" rx="2"/><rect x="118" y="44" width="12" height="12" rx="2"/><rect x="136" y="44" width="12" height="12" rx="2"/></g>
+      <rect x="8" y="69" width="40" height="14" fill="var(--card)" stroke="var(--fig-line)"/>
+      <text class="ft" x="28" y="79.5" font-size="9" text-anchor="middle">B2</text>
+      <text class="ft" x="56" y="80" font-size="9" font-style="italic" text-anchor="middle">fx</text>
+      <rect x="64" y="69" width="268" height="14" fill="var(--card)" stroke="var(--fig-line)"/>
+      <rect x="8" y="88" width="324" height="16" fill="var(--fig-bar)"/>
+      <rect x="8" y="88" width="24" height="106" fill="var(--fig-bar)"/>
+      <g stroke="var(--fig-line)" stroke-width="1">
+        <path d="M8 88h324M8 104h324M8 122h324M8 140h324M8 158h324M8 176h324M8 194h324"/>
+        <path d="M8 88v106M32 88v106M107 88v106M182 88v106M257 88v106M332 88v106"/>
+      </g>
+      <g class="ft" font-size="9" text-anchor="middle">
+        <text x="69" y="99.5">A</text><text x="144" y="99.5">B</text><text x="219" y="99.5">C</text><text x="285" y="99.5">D</text>
+        <text x="20" y="116.5">1</text><text x="20" y="134.5">2</text><text x="20" y="152.5">3</text><text x="20" y="170.5">4</text><text x="20" y="188.5">5</text>
+      </g>
+      <rect x="107" y="122" width="75" height="18" fill="none" stroke="var(--green)" stroke-width="3"/>
+      <g class="co"><circle cx="168" cy="28" r="9"/><text x="168" y="32">1</text></g>
+      <g class="co"><circle cx="300" cy="50" r="9"/><text x="300" y="54">2</text></g>
+      <g class="co"><circle cx="300" cy="76" r="9"/><text x="300" y="80">3</text></g>
+      <g class="co"><circle cx="318" cy="96" r="8"/><text x="318" y="100">4</text></g>
+      <g class="co"><line x1="32" y1="167" x2="50" y2="167"/><circle cx="58" cy="167" r="9"/><text x="58" y="171">5</text></g>
+      <g class="co"><line x1="144" y1="140" x2="144" y2="150"/><circle cx="144" cy="158" r="9"/><text x="144" y="162">6</text></g>
+    </svg>
+    <ol class="legend">
+      <li><strong>タブ</strong>　「ファイル」「ホーム」「挿入」など。道具箱の引き出しの名前です。</li>
+      <li><strong>リボン</strong>　道具（ボタン）がならぶところ。ふだんは「ホーム」だけで足ります。</li>
+      <li><strong>数式バー</strong>　いま選んでいるます目の中身が見えるところ。</li>
+      <li><strong>列</strong>　たての並び。A、B、C…とアルファベットの名前がつきます。</li>
+      <li><strong>行</strong>　よこの並び。1、2、3…と数字の名前がつきます。</li>
+      <li><strong>セル</strong>　ます目ひとつ。緑のわくが「いまここ」の印です。</li>
+    </ol>
+  </figure>
+
+  <div class="ok"><b>セルの名前</b>教室の座席表と同じです。「B列の2行目」のます目は <strong>B2</strong> とよびます。図の緑のわくが B2 です。</div>
+
+  <h3>やってみましょう</h3>
+  <ol class="steps">
+    <li>好きなセルをクリックします。緑のわくがそこに動きます。</li>
+    <li>A1、C3、D5 を順にクリックしてみましょう。左上の小さならんに、セルの名前が出ます。</li>
+    <li>キーボードの矢印キー <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> でも、緑のわくが動きます。</li>
+    <li>このまま第7回へ進んでもよいですし、<span class="ui">×</span> で閉じてもかまいません。「保存しますか？」と聞かれたら <span class="ui">保存しない</span> をクリックします。</li>
+  </ol>
+</section>
+
+<!-- ================= 第7回 ================= -->
+<section id="l7" class="lesson" data-n="7">
+  <p class="kai">第7回／全10回</p>
+  <h2>家計簿に書きこむ</h2>
+  <div class="meate"><b>きょうのめあて</b>見出しをつくり、4日分の支出を書きこむ。</div>
+
+  <p>できあがりは、このような表です。</p>
+  <div class="scroll">
+  <table class="sheet">
+    <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th></tr>
+    <tr class="hd"><th>1</th><td>日付</td><td>内容</td><td>分類</td><td>金額</td></tr>
+    <tr><th>2</th><td>11月1日</td><td>スーパー</td><td>食費</td><td class="n">3280</td></tr>
+    <tr><th>3</th><td>11月2日</td><td>電気代</td><td>光熱費</td><td class="n">6450</td></tr>
+    <tr><th>4</th><td>11月3日</td><td>バス</td><td>交通費</td><td class="n">420</td></tr>
+    <tr><th>5</th><td>11月5日</td><td>本</td><td>趣味</td><td class="n">1650</td></tr>
+  </table>
+  </div>
+
+  <h3>見出しを書く</h3>
+  <ol class="steps">
+    <li>Excel を開き、<span class="ui">空白のブック</span> をクリックします。</li>
+    <li>セル <strong>A1</strong> をクリックします。</li>
+    <li>「日付」と打ちます（NIDUKE → <kbd>スペース</kbd> で変換）。</li>
+    <li><kbd>Enter</kbd> を<strong>2回</strong>押します。1回目で漢字が決まり、2回目でセルに入ります。</li>
+    <li>同じように、<strong>B1</strong> に「内容」、<strong>C1</strong> に「分類」、<strong>D1</strong> に「金額」と入れます。セルは、クリックして選びます。</li>
+  </ol>
+
+  <h3>1日分を書く</h3>
+  <ol class="steps">
+    <li><strong>A2</strong> をクリックし、<kbd>1</kbd><kbd>1</kbd><kbd>/</kbd><kbd>1</kbd> と打って <kbd>Enter</kbd>。「11月1日」と表示されます。ななめ線 <kbd>/</kbd> は、右下の「め」と書かれたキーです。</li>
+    <li><strong>B2</strong> をクリックし、「スーパー」と入れます。</li>
+    <li><strong>C2</strong> をクリックし、「食費」と入れます。</li>
+    <li><strong>D2</strong> をクリックし、「3280」と入れます。円マークやカンマは打たなくてかまいません（第9回でつけます）。</li>
+    <li>残りの3行も、上の表を見ながら入れてみましょう。</li>
+  </ol>
+
+  <h3>直したいとき</h3>
+  <table class="pair">
+    <tr><th>やりたいこと</th><th>やり方</th></tr>
+    <tr><td>書きなおす</td><td>そのセルをクリックして、そのまま新しく打つ。前の中身は置きかわります。</td></tr>
+    <tr><td>消す</td><td>そのセルをクリックして <kbd>Delete</kbd>（デリート）キー。</td></tr>
+    <tr><td>ひとつ前にもどす</td><td><kbd>Ctrl</kbd> を押しながら <kbd>Z</kbd>。失敗を取り消せます。</td></tr>
+  </table>
+
+  <div class="tip"><b>つまずきやすいところ</b>打ったのにセルに入らないときは、<kbd>Enter</kbd> をもう1回押してください。日本語のときは「決める」と「入れる」で2回いります。</div>
+  <div class="ok"><b>楽をするコツ</b><kbd>Tab</kbd>（タブ）キーを押すと、右どなりのセルへ進みます。「日付 → Tab → 内容 → Tab → 分類 → Tab → 金額 → Enter」と打つと、マウスにさわらずに1行書けます。</div>
+  <div class="ok"><b>ここでやめるときは</b>せっかく書いた表を消さないよう、先に第10回の「はじめて保存する」をやってから閉じましょう。</div>
+</section>
+
+<!-- ================= 第8回 ================= -->
+<section id="l8" class="lesson" data-n="8">
+  <p class="kai">第8回／全10回</p>
+  <h2>合計を出す</h2>
+  <div class="meate"><b>きょうのめあて</b>「オート SUM」で、金額の合計を Excel に計算させる。</div>
+  <div class="ok"><b>ここが Excel のいちばん便利なところ</b>電卓はいりません。数字をあとで直せば、合計もひとりでに直ります。</div>
+
+  <ol class="steps">
+    <li>第7回の表を開いたまま、<strong>A6</strong> をクリックして「合計」と入れます。</li>
+    <li><strong>D6</strong> をクリックします。金額のいちばん下の、すぐ下のセルです。</li>
+    <li>上の <span class="ui">ホーム</span> タブの、右のほうにある <span class="ui">Σ</span>（<span class="ui">オート SUM</span>）をクリックします。</li>
+    <li>D2 から D5 が点線でかこまれ、D6 に <strong>=SUM(D2:D5)</strong> と出ます。「D2 から D5 までを足す」という意味です。</li>
+    <li><kbd>Enter</kbd> を押します。D6 に <strong>11800</strong> と出れば成功です。</li>
+  </ol>
+
+  <div class="scroll">
+  <table class="sheet">
+    <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th></tr>
+    <tr class="hd"><th>1</th><td>日付</td><td>内容</td><td>分類</td><td>金額</td></tr>
+    <tr><th>2</th><td>11月1日</td><td>スーパー</td><td>食費</td><td class="n">3280</td></tr>
+    <tr><th>3</th><td>11月2日</td><td>電気代</td><td>光熱費</td><td class="n">6450</td></tr>
+    <tr><th>4</th><td>11月3日</td><td>バス</td><td>交通費</td><td class="n">420</td></tr>
+    <tr><th>5</th><td>11月5日</td><td>本</td><td>趣味</td><td class="n">1650</td></tr>
+    <tr><th>6</th><td>合計</td><td></td><td></td><td class="n sel">11800</td></tr>
+  </table>
+  </div>
+
+  <h3>たしかめてみましょう</h3>
+  <ol class="steps">
+    <li><strong>D4</strong> をクリックし、「840」と打って <kbd>Enter</kbd>。バス代を倍にしてみます。</li>
+    <li>合計が <strong>12220</strong> に変わります。何もしなくても、計算しなおしてくれました。</li>
+    <li><kbd>Ctrl</kbd> を押しながら <kbd>Z</kbd> で、420 にもどしておきましょう。</li>
+  </ol>
+
+  <h3>行を足したいとき</h3>
+  <ol class="steps">
+    <li>左はしの行番号 <span class="ui">6</span>（合計の行）を<strong>右クリック</strong>します。</li>
+    <li>出てきたメニューの <span class="ui">挿入</span> をクリックします。合計の上に、空の行がひとつできます。</li>
+    <li>その行に新しい支出を書きます。</li>
+    <li>合計のセルをクリックし、もう一度 <span class="ui">オート SUM</span> → <kbd>Enter</kbd>。足す範囲が取りなおされます。</li>
+  </ol>
+
+  <div class="tip"><b>つまずきやすいところ</b>点線のかこみが金額の列とちがうところについたら、<kbd>Esc</kbd>（エスケープ）キーでやめて、D6 をクリックするところからやりなおしてください。</div>
+</section>
+
+<!-- ================= 第9回 ================= -->
+<section id="l9" class="lesson" data-n="9">
+  <p class="kai">第9回／全10回</p>
+  <h2>見やすくととのえる</h2>
+  <div class="meate"><b>きょうのめあて</b>見出しを太くし、金額にカンマをつけ、線を引く。</div>
+  <p>使うのは、どれも <span class="ui">ホーム</span> タブのボタンです。ボタンに矢印を合わせてしばらく待つと、名前が小さく出ます。それで確かめられます。</p>
+
+  <h3>見出しを太字にする</h3>
+  <ol class="steps">
+    <li><strong>A1</strong> に矢印を合わせ、左ボタンを押したまま <strong>D1</strong> まで動かして、はなします（ドラッグ）。4つのセルがまとめて選ばれます。</li>
+    <li><span class="ui">B</span>（<span class="ui">太字</span>）のボタンをクリックします。</li>
+  </ol>
+
+  <h3>金額にカンマをつける</h3>
+  <ol class="steps">
+    <li>列の名前 <span class="ui">D</span> をクリックします。D列がまるごと選ばれます。</li>
+    <li><span class="ui">,</span>（<span class="ui">桁区切りスタイル</span>）のボタンをクリックします。3280 が 3,280 になります。</li>
+  </ol>
+
+  <h3>列のはばを直す</h3>
+  <ol class="steps">
+    <li>文字がはみ出したり、「####」と出たりしたら、はばが足りない合図です。</li>
+    <li>列の名前の<strong>さかい目</strong>（たとえば B と C のあいだの線）に矢印を合わせます。矢印の形が、左右を向いた形に変わります。</li>
+    <li>そこでダブルクリックします。中身に合ったはばに、ひとりでに広がります。</li>
+  </ol>
+
+  <h3>線を引く</h3>
+  <ol class="steps">
+    <li><strong>A1</strong> から <strong>D6</strong> までドラッグして、表全体を選びます。</li>
+    <li><span class="ui">罫線</span>（田の字のような小さなボタン）の右どなりの <span class="ui">∨</span> をクリックします。</li>
+    <li>出てきた一覧から <span class="ui">格子</span> をクリックします。</li>
+  </ol>
+
+  <div class="scroll">
+  <table class="sheet">
+    <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th></tr>
+    <tr class="hd"><th>1</th><td>日付</td><td>内容</td><td>分類</td><td>金額</td></tr>
+    <tr><th>2</th><td>11月1日</td><td>スーパー</td><td>食費</td><td class="n">3,280</td></tr>
+    <tr><th>3</th><td>11月2日</td><td>電気代</td><td>光熱費</td><td class="n">6,450</td></tr>
+    <tr><th>4</th><td>11月3日</td><td>バス</td><td>交通費</td><td class="n">420</td></tr>
+    <tr><th>5</th><td>11月5日</td><td>本</td><td>趣味</td><td class="n">1,650</td></tr>
+    <tr><th>6</th><td>合計</td><td></td><td></td><td class="n">11,800</td></tr>
+  </table>
+  </div>
+
+  <div class="tip"><b>つまずきやすいところ</b>思ったのとちがう見た目になったら、あわてずに <kbd>Ctrl</kbd> を押しながら <kbd>Z</kbd>。ひとつ前にもどります。何回でも使えます。</div>
+</section>
+
+<!-- ================= 第10回 ================= -->
+<section id="l10" class="lesson" data-n="10">
+  <p class="kai">第10回／全10回</p>
+  <h2>保存する・また開く</h2>
+  <div class="meate"><b>きょうのめあて</b>家計簿に名前をつけてしまい、次の日にまた開くことができる。</div>
+  <div class="iphone"><b>iPhone でいうと</b>iPhone のメモは、書けばそのまま残ります。パソコンでは、自分で「保存」をして、はじめて残ります。保存したものを<strong>ファイル</strong>とよびます。</div>
+
+  <h3>はじめて保存する</h3>
+  <ol class="steps">
+    <li>左上の <span class="ui">ファイル</span> タブをクリックします。</li>
+    <li>左にならんだ中から <span class="ui">名前を付けて保存</span> をクリックします。</li>
+    <li><span class="ui">参照</span> をクリックします。小さなウィンドウが開きます。</li>
+    <li>そのウィンドウの左がわにある <span class="ui">ドキュメント</span> をクリックします。ここが、書類をしまう引き出しです。</li>
+    <li>下のほうの <span class="ui">ファイル名</span> のらんをクリックし、入っている文字を消して「家計簿」と打ちます。</li>
+    <li><span class="ui">保存</span> をクリックします。Excel のいちばん上に「家計簿」と出れば成功です。</li>
+  </ol>
+
+  <h3>2回目からの保存</h3>
+  <ol class="steps">
+    <li>書きたしたら、<kbd>Ctrl</kbd> を押しながら <kbd>S</kbd>。これだけです。<span class="ui">上書き保存</span> といいます。</li>
+    <li>終わるときは、右上の <span class="ui">×</span> で Excel を閉じます。</li>
+    <li>「変更を保存しますか？」と聞かれたら <span class="ui">保存</span> をクリックします。</li>
+  </ol>
+
+  <h3>次の日に、また開く</h3>
+  <ol class="steps">
+    <li>Excel を開きます。</li>
+    <li>はじめの画面の <span class="ui">最近使ったアイテム</span> に「家計簿」があります。それをクリックします。</li>
+    <li>見つからないときは、タスクバーの黄色いフォルダーの絵（<span class="ui">エクスプローラー</span>）をクリック → <span class="ui">ドキュメント</span> → 「家計簿」をダブルクリックします。</li>
+  </ol>
+
+  <div class="tip"><b>つまずきやすいところ</b>画面の左上に「自動保存」が「オン」と出ているときは、Excel がひとりでに保存しています。そのときは <kbd>Ctrl</kbd>＋<kbd>S</kbd> をしなくても大丈夫です。</div>
+  <div class="ok"><b>ここまでできたら卒業です</b>あとは毎日、1行ずつ書きたすだけ。月がかわったら、同じやり方で新しい表をつくれます。最後に、第3回の <span class="ui">シャットダウン</span> で電源を切りましょう。</div>
+</section>
+
+<!-- ================= 困ったとき ================= -->
+<section id="help" class="page">
+  <p class="kai">いつでも見られます</p>
+  <h2>困ったとき</h2>
+  <div class="ok"><b>まず深呼吸</b>たいていのことは、<kbd>Esc</kbd> キーを押すか、<kbd>Ctrl</kbd> を押しながら <kbd>Z</kbd> で元にもどります。</div>
+
+  <div class="qa"><h3>打っても英語（ローマ字）のまま</h3><p>左上の <kbd>半角/全角</kbd> キーを1回押します。タスクバーの右が <span class="ui">あ</span> になれば日本語です。</p></div>
+  <div class="qa"><h3>まちがえて消した、変になった</h3><p><kbd>Ctrl</kbd> を押しながら <kbd>Z</kbd>。ひとつ前にもどります。くり返し押せば、さらに前へもどれます。</p></div>
+  <div class="qa"><h3>知らないメニューや小さな画面が出た</h3><p>左上の <kbd>Esc</kbd> キーを押すか、<span class="ui">キャンセル</span> をクリックします。</p></div>
+  <div class="qa"><h3>画面がまっ暗になった</h3><p>ひと休み（スリープ）しているだけです。マウスを動かすか、キーをひとつ押します。それでもだめなら、電源ボタンを短く1回押します。</p></div>
+  <div class="qa"><h3>開いていた画面が消えた</h3><p>下にしまわれただけ（最小化）です。タスクバーにあるアプリの絵をクリックします。</p></div>
+  <div class="qa"><h3>矢印（ポインター）が見つからない</h3><p>マウスを左右に大きくふってみてください。動くものが目に入ります。</p></div>
+  <div class="qa"><h3>文字やます目が急に大きく・小さくなった</h3><p><kbd>Ctrl</kbd> を押しながらホイールを回すと、大きさが変わります。知らずに回してしまったのでしょう。同じやり方でもどせます。</p></div>
+  <div class="qa"><h3>アルファベットが大文字ばかりになる</h3><p><kbd>Shift</kbd> を押しながら <kbd>Caps Lock</kbd> を1回押します。</p></div>
+  <div class="qa"><h3>セルに「####」と出る</h3><p>列のはばが足りません。列の名前のさかい目をダブルクリックします（第9回）。</p></div>
+  <div class="qa"><h3>保存した家計簿が見つからない</h3><p>タスクバーの黄色いフォルダー（<span class="ui">エクスプローラー</span>）→ <span class="ui">ドキュメント</span> の中をさがします。</p></div>
+  <div class="qa"><h3>何を押しても動かない</h3><p>1〜2分、そのまま待ってみます。それでも動かなければ、むりをせず、ご家族に相談しましょう。</p></div>
+  <div class="tip"><b>大事な注意</b>とつぜん「ウイルスに感染しました」「この番号に電話してください」と大きく出ることがあります。これは<strong>にせもの</strong>です。電話をかけたり、お金を払ったりしないでください。そのままにして、ご家族に見せましょう。</div>
+</section>
+
+<!-- ================= ことば ================= -->
+<section id="words" class="page">
+  <p class="kai">いつでも見られます</p>
+  <h2>ことばの手帳</h2>
+  <dl class="words">
+    <dt>デスクトップ</dt><dd>電源を入れて最初に出る、いちばん広い画面。机の上にあたります。</dd>
+    <dt>タスクバー</dt><dd>画面の下の細い帯。スタートや時計がならびます。</dd>
+    <dt>スタート</dt><dd>青い窓のマーク。アプリを開く入口で、電源を切るのもここからです。</dd>
+    <dt>アプリ</dt><dd>iPhone のアプリと同じ。Excel やメモ帳のこと。</dd>
+    <dt>ウィンドウ</dt><dd>アプリが開く四角い枠。「窓」という意味です。</dd>
+    <dt>ポインター</dt><dd>マウスで動かす、画面の白い矢印。</dd>
+    <dt>カーソル</dt><dd>文字が入る場所でチカチカする、細い縦の線。</dd>
+    <dt>クリック</dt><dd>マウスの左ボタンを1回押すこと。iPhone のタップ。</dd>
+    <dt>ダブルクリック</dt><dd>左ボタンをすばやく2回押すこと。ものを開くときに使います。</dd>
+    <dt>右クリック</dt><dd>右ボタンを1回押すこと。メニューが出ます。iPhone の長押しに近いものです。</dd>
+    <dt>ドラッグ</dt><dd>左ボタンを押したままマウスを動かすこと。</dd>
+    <dt>スクロール</dt><dd>ホイールを回して、画面を上下に送ること。</dd>
+    <dt>ファイル</dt><dd>保存した書類ひとつ。「家計簿」もファイルです。</dd>
+    <dt>フォルダー</dt><dd>ファイルをしまう入れもの。「ドキュメント」もフォルダーです。</dd>
+    <dt>保存</dt><dd>書いたものをパソコンにしまうこと。保存しないと消えます。</dd>
+    <dt>ブック</dt><dd>Excel のファイルのこと。ノート1冊にあたります。</dd>
+    <dt>シート</dt><dd>ブックの中の1ページ。</dd>
+    <dt>セル</dt><dd>Excel のます目ひとつ。A1、B2 のようによびます。</dd>
+    <dt>行・列</dt><dd>行はよこの並び（1、2、3…）、列はたての並び（A、B、C…）。</dd>
+    <dt>シャットダウン</dt><dd>電源を完全に切ること。</dd>
+    <dt>スリープ</dt><dd>ひと休み。キーを押すとすぐ続きができます。</dd>
+  </dl>
+</section>
+
+</main>
+
+<nav class="tabs" aria-label="メニュー">
+  <a href="#home" data-tab="home">もくじ</a>
+  <a href="#help" data-tab="help">困ったとき</a>
+  <a href="#words" data-tab="words">ことば</a>
+</nav>
+
+<script>
+(function () {
+  var KEY = 'pc-kyoshitsu-v1';
+  var TOTAL = 10;
+  var state = { done: [], size: 0 };
+  try {
+    var saved = JSON.parse(localStorage.getItem(KEY) || 'null');
+    if (saved && Array.isArray(saved.done)) { state.done = saved.done; state.size = saved.size | 0; }
+  } catch (e) {}
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
+
+  var root = document.documentElement;
+  root.classList.add('js');
+  var sections = [].slice.call(document.querySelectorAll('main > section'));
+  var lessons = sections.filter(function (s) { return s.classList.contains('lesson'); });
+
+  // 各回の最後に「できました」と前後の回へのリンクを足す
+  lessons.forEach(function (sec) {
+    var n = +sec.dataset.n;
+    var fin = document.createElement('div');
+    fin.className = 'fin';
+    fin.innerHTML =
+      '<div class="stamp"><svg viewBox="0 0 100 100"><use href="#hanamaru"/></svg><p>よくできました</p></div>' +
+      '<button type="button" class="donebtn"></button>';
+    var pn = document.createElement('div');
+    pn.className = 'pn';
+    pn.innerHTML =
+      (n > 1 ? '<a href="#l' + (n - 1) + '">前の回へ</a>' : '<a href="#home">もくじへ</a>') +
+      (n < TOTAL ? '<a class="next" href="#l' + (n + 1) + '">次の回へ</a>' : '<a class="next" href="#home">もくじへ</a>');
+    sec.appendChild(fin);
+    sec.appendChild(pn);
+    fin.querySelector('button').addEventListener('click', function () {
+      var i = state.done.indexOf(n);
+      if (i === -1) { state.done.push(n); fin.classList.add('pop'); }
+      else { state.done.splice(i, 1); fin.classList.remove('pop'); }
+      save(); render();
+    });
+  });
+
+  function render() {
+    lessons.forEach(function (sec) {
+      var n = +sec.dataset.n, done = state.done.indexOf(n) !== -1;
+      var fin = sec.querySelector('.fin');
+      fin.classList.toggle('done', done);
+      fin.querySelector('button').textContent = done ? 'しるしを消す' : 'できました';
+    });
+    [].forEach.call(document.querySelectorAll('#toc a'), function (a) {
+      a.classList.toggle('done', state.done.indexOf(+a.dataset.n) !== -1);
+    });
+    var count = state.done.length;
+    document.getElementById('progress').textContent = '全' + TOTAL + '回のうち、' + count + '回 おわりました';
+    var next = 0;
+    for (var k = 1; k <= TOTAL; k++) { if (state.done.indexOf(k) === -1) { next = k; break; } }
+    var r = document.getElementById('resume');
+    if (!next) { r.textContent = '全部おわりました。おめでとうございます'; r.href = '#l10'; }
+    else { r.textContent = (count ? 'つづきから：' : '') + '第' + next + '回' + (count ? '' : 'からはじめる'); r.href = '#l' + next; }
+  }
+
+  function applySize() {
+    root.classList.remove('fs1', 'fs2');
+    if (state.size) root.classList.add('fs' + state.size);
+    [].forEach.call(document.querySelectorAll('.sizer button'), function (b) {
+      b.setAttribute('aria-pressed', String(+b.dataset.fs === state.size));
+    });
+  }
+  [].forEach.call(document.querySelectorAll('.sizer button'), function (b) {
+    b.addEventListener('click', function () { state.size = +b.dataset.fs; save(); applySize(); });
+  });
+
+  function route() {
+    var id = (location.hash || '#home').slice(1);
+    if (!document.getElementById(id) || sections.every(function (s) { return s.id !== id; })) id = 'home';
+    sections.forEach(function (s) { s.hidden = s.id !== id; });
+    var tab = id === 'help' || id === 'words' ? id : 'home';
+    [].forEach.call(document.querySelectorAll('nav.tabs a'), function (a) {
+      if (a.dataset.tab === tab) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
+    });
+    [].forEach.call(document.querySelectorAll('.fin.pop'), function (f) { f.classList.remove('pop'); });
+    window.scrollTo(0, 0);
+  }
+  window.addEventListener('hashchange', route);
+
+  applySize(); render(); route();
+})();
+</script>
+</body>
+</html>
